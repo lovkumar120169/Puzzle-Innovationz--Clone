@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootcamp - Learn, Grow, Succeed</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+        <link rel="icon" type="image/x-icon" href="./pages/favicon.png">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+        
+</head>
+
+<body>
+    
+    <div style="width: 100%; background-color: white;" id="navbar-s">
+        <div
+            style="display: flex; gap: 15px; justify-content: end; align-items: center;padding-right: 30px; margin-top: -14px;margin-bottom: -15px;background-color: white;">
+            <div style="display: flex; gap: 5px; align-items: center;">
+                <img src="./images/callimg.png" alt="">
+                <h5 class="h5-items-s" style="font-size: 14px;color: black;">Call us +1 415 966 2533</h5>
+            </div>
+            <div style="display: flex; gap: 5px; align-items: center;">
+                <img src="./images/emailimg.png" alt="">
+                <h5 class="h5-items-s" style="font-size: 14px;color: black;">Example@gmail.com</h5>
+
+            </div>
+
+        </div>
+        <hr>
+<!-- second nav -->
+
+        <div style="display: flex; justify-content: space-around; align-items: center; height: 60px; ">
+            <div>
+                <img src="./pages/logopuzzle2.png" alt=""  style="width:43%;margin: auto;">
+            </div>
+            <div style="display: flex; justify-content: space-around; gap: 50px;">
+                <div class="dropdown">
+
+                    <a class=" dropdown-toggle" id="nih" href="#" role="" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" >
+                        Courses
+                    </a>
+                  
+                    <ul class="dropdown-menu mt-4" aria-labelledby="dropdownMenuLink" style="padding: 30px; border-radius: 15px; width: 320px; ">
+                      <li><a class="dropdown-item" href="./pages/DataAnalytics/dataAnalytics.html" style=" font-size: 20px;margin-top: 5px; align-items: center;"><img src="./images/Analyticslogo.png" width="10%" class="mb-1" alt=""> Analytics</a></li>
+                      <li><a class="dropdown-item" href="./pages/Data Science/datascience.html" style=" font-size: 20px;margin-top: 5px;"><img src="./images/dataSciencelogo.png" width="10%" class="mb-1" alt=""> Data Science</a></li>
+                      <li><a class="dropdown-item" href="./pages/UI/uiux.html" style=" font-size: 20px;margin-top: 5px;"><img src="./images/Designlogo.png" width="10%" class="mb-1" alt=""> Design</a></li>
+                      <li><a class="dropdown-item" href="./pages/Cybersecurity/bootcamp.html" style=" font-size: 20px;margin-top: 5px;"><img src="./images/cybersecuritylogo.png" width="10%" class="mb-1" alt=""> Cybersecurity</a></li>
+                      <li><a class="dropdown-item" href="./pages/Software Engineering Bootcamp/bootcamp.html" style=" font-size: 20px;margin-top: 5px;"><img src="./images/codinglogo.png" width="10%" class="mb-1" alt=""> Coding</a></li>
+                      <li><a class="dropdown-item" href="./pages/ML engineering/ML.html" style=" font-size: 20px;margin-top: 5px;"><img src="./pages/mllogo.png" width="10%" class="mb-1" alt=""> Machine Learning</a></li>
+
+                      <li><a class="dropdown-item" href="./pages/TechSales/techsales.html" style=" font-size: 20px;margin-top: 5px;"><img src="./images/techsaleslogo.png" width="10%" class="mb-1" alt=""> Tech Sales</a></li>
+                      <hr>
+                      <!-- <p class="p-items">Still Unsure?</p>
+                      <h6 style="margin-top: -10px; margin-bottom: 20px;">Take our short career quiz</h6>
+
+                      <li><a class="dropdown-item" href="#" style="font-weight: 500; font-size: 16px;margin-top: 5px;"><button class="" style="padding: 10px 20px; font-size: 14px; font-weight: 600; color: white; border: 1px solid #5E0BD1; background-color: #5E0BD1; border-radius: 5px;width: 100%;" >View all courses</button></a></li> -->
+                    </ul>
+                  </div>
+
+                  <div class="dropdown">
+
+                    <a class=" dropdown-toggle" id="nih" href="#" role="" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" >
+                        Why Springboard
+                    </a>
+                  
+                    <ul class="dropdown-menu dd-items mt-4" aria-labelledby="dropdownMenuLink" style="padding: 20px; border-radius: 15px; ">
+                      <li><a class="dropdown-item" href="./pages/howItsWork/howItsWork.html" style="font-weight: 500; font-size: 16px;margin-top: 5px;">How it works</a></li>
+                      <li><a class="dropdown-item" href="./pages/Mentors/mentors.html" style="font-weight: 500; font-size: 16px;margin-top: 5px;">Mentorship</a></li>
+                      <li><a class="dropdown-item" href="./pages/JobGuarantee/job_gruarantee.html" style="font-weight: 500; font-size: 16px;margin-top: 5px;">Job guarantee</a></li>
+                      
+                    </ul>
+                  </div>
+
+                  <div class="dropdown">
+
+                    <a class=" dropdown-toggle " id="nih" href="#" role="" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" >
+                        For Partners
+                    </a>
+                  
+                    <ul class="dropdown-menu mt-4" aria-labelledby="dropdownMenuLink"  style="padding: 20px; border-radius: 15px; ">
+                      <li><a class="dropdown-item" href="./pages/Universities/university.html" style="font-weight: 500; font-size: 16px;margin-top: 5px;">University</a></li>
+                      <li><a class="dropdown-item" href="./pages/Business/business.html" style="font-weight: 500; font-size: 16px;margin-top: 5px;" >Businesses</a></li>
+                      
+                    </ul>
+                  </div>
+
+
+                  
+
+                  <div class="dropdown">
+
+                    <a class=" dropdown-toggle" id="nih" href="#" role="" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" >
+                        Resources
+                    </a>
+                  
+                    <ul class="dropdown-menu mt-4" aria-labelledby="dropdownMenuLink"  style="padding: 20px; border-radius: 15px; ">
+                      <li><a class="dropdown-item" href="./pages/Payments/payment.html" style="font-weight: 500; font-size: 16px;margin-top: 5px;">Payment options</a></li>
+                      <li><a class="dropdown-item" href="./pages/Scholarships/scholarships.html" style="font-weight: 500; font-size: 16px;margin-top: 5px;">Scholarships</a></li>
+                    </ul>
+                  </div>
+
+                <a class="h5-items " id="nih" href="./pages/Blog/blog.html">Blog</a>
+            </div>
+            <div>
+                <a href="#photo">
+                    <button class="" style="padding: 10px 20px; font-size: 14px; font-weight: 600; color: white; border: 1px solid #5E0BD1; background-color: #5E0BD1; border-radius: 5px;" >Apply Now</button>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+
+    <section id="tophome" style="margin-top: 100px;">
+        <div>
+            <h1>Learn online with a job guarantee</h1>
+            <p>Learn through projects. Work 1-on-1 with a mentor and career coach. <br>Land a job or your money back.</p>
+
+            <p class="course">Our courses:</p>
+            
+                <a href="#photo">
+                    <button>Data</button>
+                    <button>Design</button>
+                    <button>Coding</button>
+                    <button>Cybersec</button>
+                    <button>TechSales</button>
+                </a>
+            <br>
+            <a href="#photo">
+
+                <button style="color:aliceblue;background-color: #5E0BD1; text-align: left; margin-left: -450px;">Apply Now</button>
+            </a>
+
+        </div>
+        <div>
+            <img src="./images/homeGril.png" alt="">
+        </div>
+    </section>
+
+    <section id="joinBootcamp">
+        <p>Join thousands of Bootcamp graduates who work at companies like:</p>
+        <div>
+            <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,h_40,q_auto,f_auto,dpr_auto,fl_lossy/v1675916604/website-redesign-dev/American-Express-Logo_2.webp" alt="">
+
+            <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,h_40,q_auto,f_auto,dpr_auto,fl_lossy/v1675916604/website-redesign-dev/Oracle-Logo_1.webp" alt="">
+            <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,h_40,q_auto,f_auto,dpr_auto,fl_lossy/v1675916604/website-redesign-dev/American-Express-Logo_1.webp" alt="">
+            <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,h_40,q_auto,f_auto,dpr_auto,fl_lossy/v1675916605/website-redesign-dev/Walmart_logo.webp" alt="">
+            <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,h_40,q_auto,f_auto,dpr_auto,fl_lossy/v1675916604/website-redesign-dev/VISA-logo_1.webp" alt="">
+        </div>
+    </section>
+
+    <div style="margin-left: 200px; margin-top: 150px;">
+        <h5 class="h5-items">PROGRAMS TO PROPEL YOU FORWARD</h5>
+        <h1 class="h1-items">Choose your course and set your <br> career in motion</h1>
+        <p class="p-items">Want a new career? With Springboard courses, you’ll learn everything you need to <br>
+            land
+            the job you want in
+            three to nine months.</p>
+
+        <div style="display: flex; gap: 150px;" class="m-div">
+            <div class="items-div" >
+                <h3 class="Ec">Explore courses</h3>
+                <h2 onclick="toggleCourse('analytics','ana')" id="ana">Analytics</h2>
+                <h2 onclick="toggleCourse('dataScience' ,'datasc')" id="datasc">Data Science</h2>
+                <h2 onclick="toggleCourse('design','desi')" id="desi">Design</h2>
+                <h2 onclick="toggleCourse('cybersecurity','cyber')" id="cyber">Cybersecurity</h2>
+                <h2 onclick="toggleCourse('coding','code')" id="code">Coding</h2>
+                <h2 onclick="toggleCourse('techSales','tec')" id="tec">Tech Sales</h2>
+                <hr class="hr-line">
+                <div>
+                    <a href="#photo">
+                        <button class="items-btn item-btn-apply" >Apply Now</button>
+                    <br>
+                    </a>
+                    
+                </div>
+            </div>
+            <div style="width: 53%;">
+
+                <div class="course-details" id="analytics" >
+                    <img src="./images/an-logo.png" alt="logo" width="100%">
+                    <h1 class="h1-items" style="font-size: 35px;">Drive decision-making through data</h1>
+                    <p class="p-items">Learn to analyze business problems and transform data into insight</p>
+                    <div>
+                        <div style="display: flex; justify-content: space-between;">
+                            <div>
+                                <div style="display: flex; align-items: center;">
+                                    <h1 class="h1-items" style="font-size: 20px;">Data Analytics Career Track </h1>
+                                    <div class="jg">JOB GUARANTEE</div>
+                                </div>
+                                <p class="p-items">Build a foundation for structured thinking, master visualization,
+                                    and
+                                    <br> become a data story-teller
+                                </p>
+                            </div>
+                            <div>
+                                <a href="./pages/DataAnalytics/dataAnalytics.html">
+
+                                    <button class="items-btn"
+                                    style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
+                                    Course</button>
+                                </a>
+                              
+                            </div>
+                        </div>
+                        <hr>
+                        <div style="display: flex; justify-content: space-between">
+                            <div>
+                                <h1 class="h1-items" style="font-size: 20px;">Introduction to Data Analytics</h1>
+                                <p class="p-items">Learn analytics fundamentals and figure out if a career in data
+                                    is
+                                    right
+                                    <br> for you
+                                </p>
+                            </div>
+                            <div>
+                                <a href="./pages/DataAnalytics/dataAnalytics.html">
+
+                                    <button class="items-btn"
+                                    style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
+                                    Course</button>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Data Science -->
+
+                <div  class="course-details" id="dataScience" style="display: none;">
+                    <img src="./images/dsimg.png" alt="logo" width="100%">
+                    <h1 class="h1-items" style="font-size: 35px;">Master big data to solve big problems</h1>
+                    <p class="p-items">Use data to move business forward</p>
+                    <div>
+                        <div style="display: flex; justify-content: space-between;">
+                            <div>
+                                <div style="display: flex; align-items: center;">
+                                    <h1 class="h1-items" style="font-size: 20px;">Data Science Career Track </h1>
+                                    <div class="jg">JOB GUARANTEE</div>
+                                </div>
+                                <p class="p-items">Get data to work harder and predict business outcomes — identify
+                                    <br>
+                                    problems, wrangle data, analyze, model, and document</p>
+                            </div>
+                            <div>
+                                <a href="./pages/Data Science/datascience.html">
+
+                                    <button class="items-btn"
+                                    style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
+                                    Course</button>
+                                </a>
+                                
+                            </div>
+                        </div>
+                        <hr>
+                        <div style="display: flex; justify-content: space-between">
+                            <div>
+                                <h1 class="h1-items" style="font-size: 20px;">ML Engineering Career Track</h1>
+                                <p class="p-items">Build algorithms that learn better in partnership with the
+                                    University
+                                    of <br> California San Diego Extended Studies</p>
+                            </div>
+                            <div>
+                                <a href="./pages/ML engineering/ML.html">
+
+                                    <button class="items-btn"
+                                    style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
+                                    Course</button>
+                                </a>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div style="display: flex; justify-content: space-between">
+                            <div>
+                                <h1 class="h1-items" style="font-size: 20px;">Data Engineering Career Track</h1>
+                                <p class="p-items">Design and build pipelines that transform and transport data in
+                                    <br>
+                                    partnership with the Washington University in St. Louis McKelvey School <br> of
+                                    Engineering</p>
+                            </div>
+                            <div>
+                                <a href="./pages/Data Science/datascience.html">
+
+                                    <button class="items-btn"
+                                    style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
+                                    Course</button>
+                                </a>
+                            </div>
+
+                        </div>
+                        <hr>
+                        
+                    </div>
+                </div>
+
+
+                <!-- Design -->
+
+                <div class="course-details" id="design" style="display: none;">
+                    <img src="./images/Designimg.png" alt="logo" width="100%">
+                    <h1 class="h1-items" style="font-size: 35px;">Understand users deeply and create <br>
+                        experiences they love</h1>
+                    <p class="p-items">Design products that are useful and beautiful</p>
+                    <div>
+                        <div style="display: flex; justify-content: space-between;">
+                            <div>
+                                <div style="display: flex; align-items: center;">
+                                    <h1 class="h1-items" style="font-size: 20px;">UI/UX Design Career Track </h1>
+                                    <div class="jg">JOB GUARANTEE</div>
+                                </div>
+                                <p class="p-items">Deliver form and function — develop a design-thinking mindset
+                                    <br> through hands-on projects and an externship</p>
+                            </div>
+                            <div>
+                                <a href="./pages/UI/uiux.html">
+                                    <button class="items-btn"
+                                    style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
+                                    Course</button>
+                                </a>
+                                
+                            </div>
+                        </div>
+                        <hr>
+                        <div style="display: flex; justify-content: space-between">
+                            <div>
+                                <div style="display: flex; align-items: center;">
+                                    <h1 class="h1-items" style="font-size: 20px;">UX Career Track </h1>
+                                    <div class="jg">JOB GUARANTEE</div>
+                                </div>
+                                <p class="p-items">Excel at user-centered design and increase usability through
+                                    hands-on <br> projects and an externship</p>
+                            </div>
+                            <div>
+                                <a href="./pages/UI/uiux.html">
+                                    <button class="items-btn"
+                                    style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
+                                    Course</button>
+                                </a>
+                            </div>
+
+                        </div>
+                        <hr>
+                       
+
+                    </div>
+                </div>
+
+
+                <!-- cybersecurity -->
+
+
+
+                <div class="course-details" id="cybersecurity" style="display: none;">
+                    <img src="./images/ssimg.png" alt="logo" width="100%">
+                    <h1 class="h1-items" style="font-size: 35px;">Defend people, businesses and <br> governments
+                    </h1>
+                    <p class="p-items">Make an impact on the digital front line</p>
+                    <div>
+                        <div style="display: flex; justify-content: space-between;">
+                            <div>
+                                <div style="display: flex; align-items: center;">
+                                    <h1 class="h1-items" style="font-size: 20px;">Cybersecurity Career Track </h1>
+                                    <div class="jg">JOB GUARANTEE</div>
+                                </div>
+                                <p class="p-items">Assess systems and network security, vulnerabilities, and
+                                    operations <br> — graduate with CompTIA Security+ Certification</p>
+                            </div>
+                            <div>
+                                <a href="./pages/Cybersecurity/bootcamp.html">
+
+                                    <button class="items-btn"
+                                    style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
+                                    Course</button>
+                                </a>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Coding -->
+
+
+                <div class="course-details" id="coding" style="display: none;">
+                    <img src="./images/codingimg.png" alt="logo" width="100%">
+                    <h1 class="h1-items" style="font-size: 35px;">Write code that will shape the future</h1>
+                    <p class="p-items">Learn front-end and back-end development</p>
+                    <div>
+                        <div style="display: flex; justify-content: space-between;">
+                            <div>
+                                <div style="display: flex; align-items: center;">
+                                    <h1 class="h1-items" style="font-size: 20px;">Software Engineering Career Track
+                                    </h1>
+                                    <div class="jg">JOB GUARANTEE</div>
+                                </div>
+                                <p class="p-items">Master software development theory, tools, and skills — build
+                                    powerful <br> web apps using React, Node, and Express</p>
+                            </div>
+                            <div>
+                                <a href="./pages/Software Engineering Bootcamp/bootcamp.html">
+                                    <button class="items-btn"
+                                    style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
+                                    Course</button>
+                                </a>
+                                
+                            </div>
+                        </div>
+                        <hr>
+                        <div style="display: flex; justify-content: space-between">
+                            <div>
+                                <h1 class="h1-items" style="font-size: 20px;">Software Engineering Career Track Prep
+                                </h1>
+                                <p class="p-items">Build foundations in stats and coding to prepare for our Software
+                                    <br> Engineering Career Track</p>
+                            </div>
+                            <div>
+                                <a href="./pages/Software Engineering Bootcamp/bootcamp.html">
+                                    <button class="items-btn"
+                                    style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
+                                    Course</button>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Tech Sales -->
+
+
+
+                <div class="course-details" id="techSales" style="display: none;">
+                    <img src="./images/TechSalesimg.png" alt="logo" width="100%">
+                    <h1 class="h1-items" style="font-size: 35px;">Help businesses solve problems with tech</h1>
+                    <p class="p-items">Put innovative solutions in the hands of companies who need them</p>
+                    <div>
+                        <div style="display: flex; justify-content: space-between;">
+                            <div>
+                                <div style="display: flex; align-items: center;">
+                                    <h1 class="h1-items" style="font-size: 20px;">Tech Sales Career Track </h1>
+                                    <div class="jg">JOB GUARANTEE</div>
+                                </div>
+                                <p class="p-items">Learn directly from sales experts by attending live online
+                                    classes that <br> will help you build job-ready sales skills</p>
+                            </div>
+                            <div>
+                                <button class="items-btn"
+                                    style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
+                                    Course</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <!-- last -->
+            </div>
+        </div>
+
+    </div>
+
+
+    <section id="learnAi">
+        <div>
+            <h1>NEW: Learn AI from <br>humans in the <br>know</h1>
+            <p>You need AI. But AI also needs you. And you both need human-guided insights to maximize the power of your collaboration. Enroll in any of our career tracks and gain exclusive access to our AI interactive learning series. You’ll learn from experts who are using AI to increase productivity, win vs. the competition, and lead their teams—so you can too.</p>
+        </div>
+        <div>
+            <img src="./images/learnAI.png" alt="">
+        </div>
+    </section>
+
+    <section id="joinourbootcamp">
+        <h1>Join an industry-leading program</h1>
+        <p>We’ve helped thousands of students learn skills and land jobs. It’s why we’ve been consistently recognized as an industry leader.</p>
+        <div>
+        <div>
+            <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_webp,dpr_auto,fl_lossy/v1678810262/website-redesign/Badges/Course-Report-Springboard-Best-Online-Bootcamp-2022_300x200.webp" alt="">
+            <h4>Best Bootcamp</h4>
+            <p>2022</p>
+        </div>
+            <div>
+                <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_webp,dpr_auto,fl_lossy/v1677578412/website-redesign/bootcamp/career-karma.webp" alt="">
+                <h4>Best Bootcamp</h4>
+                <p>2022</p></div>
+                <div>
+                    <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_webp,dpr_auto,fl_lossy/v1677578438/website-redesign/bootcamp/switchup.webp" alt="">
+                    <h4>Best Bootcamp</h4>
+                    <p>2022</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="greenscreen">
+        <p>THE SPRINGBOARD DIFFERENCE</p>
+        <h1>Take the guesswork out of getting ahead</h1>
+        <p>Build skills. Learn by doing. Get the support you need. Land the job you want.</p>
+        <div class="insidegreen">
+            <div>
+                <h1>Make your move in 3 to 9 months</h1>
+                <p>An online, flexible program to fit your life
+
+                    Springboard programs help you grow and evolve at your own pace. No need to quit your job or put your life on hold.</p>
+            </div>
+            <div>
+                <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1677266151/website-redesign/lifestyle-photography/flexible-schedule-learn-online-night.webp" alt="">
+            </div>
+        </div>
+        <div class="insidegreen">
+            <div>
+                <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1677266648/website-redesign/lifestyle-photography/hands-on-learning-projects-curriculum-springboard.webp" alt="">
+            </div>
+            <div>
+                <h1>Learn deeper with hands-on projects</h1>
+                <p>Practice the skills you’ll use in the real world
+
+                    Unlike other online courses, here you'll build a portfolio that will give you an edge with employers.</p>
+            </div>
+        </div>
+        <div class="insidegreen">
+            <div>
+                <h1>Work with a team of real people invested in your success</h1>
+                <p>Learn from the best to be your best
+
+                    You'll work 1-on-1 with a mentor, career coach, and student advisor. They'll help you define your path, knock down obstacles, and meet your goals.</p>
+            </div>
+            <div>
+                <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1677266574/website-redesign/lifestyle-photography/real-humans-support-mentorship-springboard.webp" alt="">
+            </div>
+        </div>
+        <div class="insidegreen">
+            <div>
+                <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1677792178/website-redesign/Badges/Springboard-Job-Guarantee-Badge-Rev.webp" alt="">
+            </div>
+            <div>
+                <h1>Land a job or your money back</h1>
+                <p>Invest in yourself with confidence
+
+                    Get a job within six months of graduation or get a full tuition refund. Terms apply.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="accordion">
+        <h1>Your questions, answered</h1>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Are your bootcamps 100% online?
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Yes. All of Springboard’s courses are 100% online. That means you can learn in your space, at your pace anytime, day or night. 
+
+
+
+                    And just because you are learning online, doesn’t mean you are learning alone. With Springboard, you get a team committed to your success — one-on-one expert guidance from a mentor, a career coach to support you in landing the job you want, and a student advisor to help you navigate the ins and outs of the course. Plus, you’ll build connections with other ambitious students, just like you, who will be growing alongside and helping support you every step of the way. </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    How long does the course take to complete?
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Springboard courses typically take 6 - 9 months part-time, devoting 15-25 hours/week. However you have the freedom to complete your course in less time, if you're able to devote more time per week.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    What’s involved in the “technical skills survey”?
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">The technical skills survey is a simple assessment to gauge your current skill level in your chosen field. It helps us ensure you'll have a successful experience.
+
+                    What can you expect?
+                    
+                    Technical skills surveys can include multiple choice questions, free-form questions or practice exercises, depending on the course.
+                    
+                    The skills survey is not a timed test but, for reference, most students take less than 45 minutes.</div>
+              </div>
+            </div>
+           
+          </div>
+    </section>
+    
+
+    <footer class="card">
+        <div class="content">
+            <!-- Add your content here (e.g., title, description, buttons, etc.) -->
+
+            <div class="footertop">
+                <img src="./pages/logopuzzle3.png"
+                    alt="logo">
+                <div>
+                    <a href="#"><img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1677703102/website-redesign/social-media-icons/YouTube-Icon-White-Circle-Springboard.webp"
+                        alt=""></a>
+
+
+                    <a href="#"><img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1677703102/website-redesign/social-media-icons/Instagram-Icon-White-Circle-Springboard.webp"
+                        alt=""></a>
+
+                    <a href="#"><img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1677703102/website-redesign/social-media-icons/Facebook-Icon-White-Circle-Springboard.webp"
+                        alt=""></a>
+                    
+                        <a href="#"><img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1677703102/website-redesign/social-media-icons/LinkedIn-Icon-White-Circle-Springboard.webp"
+                            alt=""></a>
+                    
+                    <a href="#"><img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1677703103/website-redesign/social-media-icons/Twitter-Icon-White-Circle-Springboard.webp"
+                        alt=""></a>        
+
+                    
+                </div>
+            </div>
+            <div class="footerbottom">
+
+                <div>
+                    <p href="#" class="footercolor">DESIGN</p>
+                    <a href="./pages/UI/uiux.html">UI/UX Design Bootcamp</a>
+                    <a href="./pages/UI/uiux.html">UX Design Bootcamp</a>
+                    
+                    <p href="#" class="footercolor">ANALYTICS</p>
+                    <a href="./pages/DataAnalytics/dataAnalytics.html">Data Analytics <br>Bootcamp</a>
+                    
+                    <p href="#" class="footercolor">DATA SCIENCE</p>
+                    <a href="./pages/Data Science/datascience.html">Data Science Bootcamp</a>
+                    <a href="./pages/ML engineering/ML.html">ML Engineering Bootcamp</a>
+                    <a href="#">Data Engineering Bootcamp</a>
+                </div>
+                <div>
+                    <p class="footercolor">SOFTWARE ENGINEERING</p>
+                    <a href="./pages/Software Engineering Bootcamp/bootcamp.html">Software Engineering</a>
+                    <a href="./pages/Software Engineering Bootcamp/bootcamp.html">Software Engineering Prep</a>
+                    <p class="footercolor">CYBERSECURITY</p>
+                    <a href="./pages/Cybersecurity/bootcamp.html">Cybersecurity Bootcamp</a>
+                    <p class="footercolor">TECH SALES</p>
+                    <a href="./pages/TechSales/techsales.html">Tech Sales Bootcamp</a>
+                </div>
+                <div>
+                    <p class="footercolor">WHY OUR BOOTCAMP</p>
+                    <a href="./pages/howItsWork/howItsWork.html">How it works</a>
+                    <a href="./pages/Mentors/mentors.html">Mentorship</a>
+                    <a href="./pages/JobGuarantee/job_gruarantee.html">Job guarantee</a>
+                    
+                </div>
+                <div>
+                    <p class="footercolor">FOR PARTNERS</p>
+                    <a href="./pages/Universities/university.html">Unversities</a>
+                    <a href="./pages/Business/business.html">Businesses</a>
+                    
+                    <p class="footercolor">RESOURCES</p>
+                    <a href="./pages/Blog/blog.html">Blog</a>
+                    <a href="./pages/Payments/payment.html">Payments</a>
+                    <a href="./pages/Scholarships/scholarships.html">Scholarship</a>
+                </div>
+                <div>
+                    <p class="footercolor">BLOG</p>
+                    <a href="./pages/Blog/blog.html">Blog</a>
+                    <p class="footercolor">FOR INQUIRIES</p>
+                    <a href="#">example@gmail.com</a>
+                </div>
+
+            </div>
+            <hr>
+        </div>
+        <div class="photo" id="photo">
+            <div >
+                <h1 class="formabove">Ready to accelerate your career? Apply now
+                </h1>
+                <p>ENTER YOUR EMAIL <span id="star">*</span></p>
+
+                <form id="startform">
+                    <input type="text" name="" id="emailID" placeholder="name@email.com">
+                    <input type="submit" value="Apply Now">
+                </form>
+
+
+            </div>
+            <div>
+                <div class="outimg">
+                    <div class="innerimg">
+                        <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,h_100,q_auto,f_webp,dpr_auto,fl_lossy/v1677269306/website-redesign/student-story-images/SB_UXC_Student_Story_Jeffrey_Surban.webp"
+                            alt="">
+                        <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,h_100,q_auto,f_webp,dpr_auto,fl_lossy/v1677269292/website-redesign/student-story-images/SB_IXC_Student_Story_3up_Avatar-Valena-Del-Valle.webp"
+                            alt="">
+                        <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,h_100,q_auto,f_webp,dpr_auto,fl_lossy/v1677269271/website-redesign/student-story-images/SB_SEC_Student_Story_3up_Avatar-Julia-Ayres.webp"
+                            alt="">
+                        <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,h_100,q_auto,f_webp,dpr_auto,fl_lossy/v1677269225/website-redesign/student-story-images/SB_DSC_Student_Story_3up_Avatar-Rane_Najera_Wynne.webp"
+                            alt="">
+                    </div>
+                    <p>JOIN 10,000+ LEARNERS</p>
+                </div>
+                <p id="imgtext">At our Bootcamp, career progress shows up when you do. We’re here to guide you from
+                    where you are to the workplaces you want to be.</p>
+                <hr>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
+<script src="./navbar/ptp.js"></script>
+<script src="./scripts/index.js"></script>
+
+
+

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business</title>
+    <link rel="stylesheet" href="./business.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+        <link rel="icon" type="image/x-icon" href="../favicon.png">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+<body>
+
+    <div style="width: 100%; background-color: white;" id="navbar-s">
+        <div
+            style="display: flex; gap: 15px; justify-content: end; align-items: center;padding-right: 30px; margin-top: -14px;margin-bottom: -15px;background-color: white;">
+            <div style="display: flex; gap: 5px; align-items: center;">
+                <img src="./assets/callimg.png" alt="">
+                <h5 class="h5-items-s" style="font-size: 14px;color: black;">Call us +1 415 966 2533</h5>
+            </div>
+            <div style="display: flex; gap: 5px; align-items: center;">
+                <img src="./assets/emailimg.png" alt="">
+                <h5 class="h5-items-s" style="font-size: 14px;color: black;">Example@gmail.com</h5>
+
+            </div>
+
+        </div>
+        <hr>
+<!-- second nav -->
+
+        <div style="display: flex; justify-content: space-around; align-items: center; height: 60px; ">
+            <div>
+                <a href="../../index.html">
+                    <img src="../logopuzzle2.png" alt="logo" width="43%">
+                </a>
+                
+            </div>
+            <div style="display: flex; justify-content: space-around; gap: 50px;">
+                <div class="dropdown">
+
+                    <a class=" dropdown-toggle" id="nih" href="#" role="" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" >
+                        Courses
+                    </a>
+                  
+                    <ul class="dropdown-menu mt-4" aria-labelledby="dropdownMenuLink" style="padding: 30px; border-radius: 15px; width: 320px; ">
+                      <li><a class="dropdown-item" href="../DataAnalytics/dataAnalytics.html" style=" font-size: 20px;margin-top: 5px; align-items: center;"><img src="./assets/Analyticslogo.png" width="10%" class="mb-1" alt=""> Analytics</a></li>
+                      <li><a class="dropdown-item" href="../Data Science/datascience.html" style=" font-size: 20px;margin-top: 5px;"><img src="./assets/dataSciencelogo.png" width="10%" class="mb-1" alt=""> Data Science</a></li>
+                      <li><a class="dropdown-item" href="../UI/uiux.html" style=" font-size: 20px;margin-top: 5px;"><img src="./assets/Designlogo.png" width="10%" class="mb-1" alt=""> Design</a></li>
+                      <li><a class="dropdown-item" href="../Cybersecurity/bootcamp.html" style=" font-size: 20px;margin-top: 5px;"><img src="./assets/cybersecuritylogo.png" width="10%" class="mb-1" alt=""> Cybersecurity</a></li>
+                      <li><a class="dropdown-item" href="../Software Engineering Bootcamp/bootcamp.html" style=" font-size: 20px;margin-top: 5px;"><img src="./assets/codinglogo.png" width="10%" class="mb-1" alt=""> Coding</a></li>
+                      <li><a class="dropdown-item" href="../ML engineering/ML.html" style=" font-size: 20px;margin-top: 5px;"><img src="../mllogo.png" width="10%" class="mb-1" alt=""> Machine Learning</a></li>
+                      <li><a class="dropdown-item" href="../TechSales/techsales.html" style=" font-size: 20px;margin-top: 5px;"><img src="./assets/techsaleslogo.png" width="10%" class="mb-1" alt=""> Tech Sales</a></li>
+                      <hr>
+                      <!-- <p class="p-items">Still Unsure?</p>
+                      <h6 style="margin-top: -10px; margin-bottom: 20px;">Take our short career quiz</h6>
+
+                      <li><a class="dropdown-item" href="#" style="font-weight: 500; font-size: 16px;margin-top: 5px;"><button class="" style="padding: 10px 20px; font-size: 14px; font-weight: 600; color: white; border: 1px solid #5E0BD1; background-color: #5E0BD1; border-radius: 5px;width: 100%;" >View all courses</button></a></li> -->
+                    </ul>
+                  </div>
+
+                  <div class="dropdown">
+
+                    <a class=" dropdown-toggle" id="nih" href="#" role="" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" >
+                        Why Springboard
+                    </a>
+                  
+                    <ul class="dropdown-menu dd-items mt-4" aria-labelledby="dropdownMenuLink" style="padding: 20px; border-radius: 15px; ">
+                      <li><a class="dropdown-item" href="../howItsWork/howItsWork.html" style="font-weight: 500; font-size: 16px;margin-top: 5px;">How it works</a></li>
+                      <li><a class="dropdown-item" href="../Mentors/mentors.html" style="font-weight: 500; font-size: 16px;margin-top: 5px;">Mentorship</a></li>
+                      <li><a class="dropdown-item" href="../JobGuarantee/job_gruarantee.html" style="font-weight: 500; font-size: 16px;margin-top: 5px;">Job guarantee</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown">
+
+                    <a class=" dropdown-toggle " id="nih" href="#" role="" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" >
+                        For Partners
+                    </a>
+                  
+                    <ul class="dropdown-menu mt-4" aria-labelledby="dropdownMenuLink"  style="padding: 20px; border-radius: 15px; ">
+                      <li><a class="dropdown-item" href="../Universities/university.html" style="font-weight: 500; font-size: 16px;margin-top: 5px;">University</a></li>
+                      <li><a class="dropdown-item" href="../Business/business.html" style="font-weight: 500; font-size: 16px;margin-top: 5px;" >Businesses</a></li>
+                     
+                    </ul>
+                  </div>
+
+
+                  
+
+                  <div class="dropdown">
+
+                    <a class=" dropdown-toggle" id="nih" href="#" role="" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" >
+                        Resources
+                    </a>
+                  
+                    <ul class="dropdown-menu mt-4" aria-labelledby="dropdownMenuLink"  style="padding: 20px; border-radius: 15px; ">
+                      <li><a class="dropdown-item" href="../Payments/payment.html" style="font-weight: 500; font-size: 16px;margin-top: 5px;">Payment options</a></li>
+                      <li><a class="dropdown-item" href="../Scholarships/scholarships.html" style="font-weight: 500; font-size: 16px;margin-top: 5px;">Scholarships</a></li>
+                    </ul>
+                  </div>
+
+                <a class="h5-items " id="nih" href="../Blog/blog.html">Blog</a>
+            </div>
+            <!-- <div>
+                <a href="#photo">
+                    <button class="" style="padding: 10px 20px; font-size: 14px; font-weight: 600; color: white; border: 1px solid #5E0BD1; background-color: #5E0BD1; border-radius: 5px;" >Apply Now</button>
+                </a>
+                
+            </div> -->
+        </div>
+    </div>
+
+    <div class="trust" style="margin: auto; margin-top: 150px; width: 75%;">
+        <img src="./assets/trustedby.png" alt="" style="width: 100%;">
+    </div>
+
+
+    <section id="greenscreen">
+        
+        <div class="insidegreen">
+            <div>
+                <h3>Drive higher productivity through proven behavior change</h3>
+                <p>We don’t just have industry-leading completion rates - 86% of Springboard students exceed the behavior change threshold.</p>
+                <p>Students take on relevant, real projects, dramatically increasing learning momentum, retention and skill application in their jobs.</p>
+            </div>
+            <div>
+                <img src="https://d9hhrg4mnvzow.cloudfront.net/learn.springboard.com/business/afc4c5ac-pexels-fauxels-3182829-1_10910dm0910bq00001w028.png" alt="">
+            </div>
+        </div>
+        <div class="insidegreen">
+            <div>
+                <img src="https://d9hhrg4mnvzow.cloudfront.net/learn.springboard.com/business/c6f598cb-sb-b2b2_10aa0bq0920bq00m000028.png" alt="">
+            </div>
+            <div>
+                <h3>Keep your employees happy by helping them grow
+
+                </h3>
+                <p>A lack of career development and advancement was the #1 reason employees quit a job this past year.</p>
+                <p>Springboard’s cohort-based training helps you engage and retain your employees by enabling them to develop the skills they need to win while fostering a sense of community.</p>
+                <p>With 8x the average completion rates and an NPS score of 57, Springboard students are building new skills and enjoying the process.</p>
+            </div>
+        </div>
+        <div class="insidegreen">
+            <div>
+                <h3>Produce rapid, measurable returns for your company</h3>
+                <p>Springboard provides (and proves) true business value and ROI, destroying the legacy cost-center model of centralized training.</p>
+                <p>Springboard’s contextualized curriculum and project-based approach helps employees apply their learnings and add value immediately.</p>
+                <p>With an estimated ROI of 9.2x for business-specific projects during the course, Springboard provides a less expensive and more reliable solution to develop your existing team than hiring. </p>
+            </div>
+            <div>
+                <img src="https://d9hhrg4mnvzow.cloudfront.net/learn.springboard.com/business/3c28cd5b-sb-b2b1_10aa0bq0920bq00m000028.png" alt="">
+            </div>
+        </div>
+        
+    </section>
+
+
+    <div class="green-bg">
+        <img src="../logopuzzle3.png" alt="">
+    </div>
+    
+</body>
+</html>

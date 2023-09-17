@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <link rel="stylesheet" href="./blog.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+        <link rel="icon" type="image/x-icon" href="../favicon.png">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+<body>
+    
+  <div style="width: 100%; background-color: white;" id="navbar-s">
+    <div
+        style="display: flex; gap: 15px; justify-content: end; align-items: center;padding-right: 30px; margin-top: -14px;margin-bottom: -15px;background-color: white;">
+        <div style="display: flex; gap: 5px; align-items: center;">
+            <img src="./assets/callimg.png" alt="">
+            <h5 class="h5-items-s" style="font-size: 14px;color: black;">Call us +1 415 966 2533</h5>
+        </div>
+        <div style="display: flex; gap: 5px; align-items: center;">
+            <img src="./assets/emailimg.png" alt="">
+            <h5 class="h5-items-s" style="font-size: 14px;color: black;">Example@gmail.com</h5>
+
+        </div>
+
+    </div>
+    <hr>
+<!-- second nav -->
+
+    <div style="display: flex; justify-content: space-around; align-items: center; height: 60px; ">
+        <div>
+            <a href="../../index.html">
+                <img src="../logopuzzle2.png" alt="logo" width="80%">
+            </a>
+            
+        </div>
+        <div style="display: flex; justify-content: space-around; gap: 50px;">
+            <div class="dropdown">
+
+                <a class=" dropdown-toggle" id="nih" href="#" role="" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" >
+                    Courses
+                </a>
+              
+                <ul class="dropdown-menu mt-4" aria-labelledby="dropdownMenuLink" style="padding: 30px; border-radius: 15px; width: 320px; ">
+                  <li><a class="dropdown-item" href="../DataAnalytics/dataAnalytics.html" style=" font-size: 20px;margin-top: 5px; align-items: center;"><img src="./assets/Analyticslogo.png" width="10%" class="mb-1" alt=""> Analytics</a></li>
+                  <li><a class="dropdown-item" href="../Data Science/datascience.html" style=" font-size: 20px;margin-top: 5px;"><img src="./assets/dataSciencelogo.png" width="10%" class="mb-1" alt=""> Data Science</a></li>
+                  <li><a class="dropdown-item" href="../UI/uiux.html" style=" font-size: 20px;margin-top: 5px;"><img src="./assets/Designlogo.png" width="10%" class="mb-1" alt=""> Design</a></li>
+                  <li><a class="dropdown-item" href="../Cybersecurity/bootcamp.html" style=" font-size: 20px;margin-top: 5px;"><img src="./assets/cybersecuritylogo.png" width="10%" class="mb-1" alt=""> Cybersecurity</a></li>
+                  <li><a class="dropdown-item" href="../Software Engineering Bootcamp/bootcamp.html" style=" font-size: 20px;margin-top: 5px;"><img src="./assets/codinglogo.png" width="10%" class="mb-1" alt=""> Coding</a></li>
+                  <li><a class="dropdown-item" href="../ML engineering/ML.html" style=" font-size: 20px;margin-top: 5px;"><img src="../mllogo.png" width="10%" class="mb-1" alt=""> Machine Learning</a></li>
+                  <li><a class="dropdown-item" href="../TechSales/techsales.html" style=" font-size: 20px;margin-top: 5px;"><img src="./assets/techsaleslogo.png" width="10%" class="mb-1" alt=""> Tech Sales</a></li>
+                  <hr>
+                  <!-- <p class="p-items">Still Unsure?</p>
+                  <h6 style="margin-top: -10px; margin-bottom: 20px;">Take our short career quiz</h6>
+
+                  <li><a class="dropdown-item" href="#" style="font-weight: 500; font-size: 16px;margin-top: 5px;"><button class="" style="padding: 10px 20px; font-size: 14px; font-weight: 600; color: white; border: 1px solid #5E0BD1; background-color: #5E0BD1; border-radius: 5px;width: 100%;" >View all courses</button></a></li> -->
+                </ul>
+              </div>
+
+              <div class="dropdown">
+
+                <a class=" dropdown-toggle" id="nih" href="#" role="" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" >
+                    Why Springboard
+                </a>
+              
+                <ul class="dropdown-menu dd-items mt-4" aria-labelledby="dropdownMenuLink" style="padding: 20px; border-radius: 15px; ">
+                  <li><a class="dropdown-item" href="../howItsWork/howItsWork.html" style="font-weight: 500; font-size: 16px;margin-top: 5px;">How it works</a></li>
+                  <li><a class="dropdown-item" href="../Mentors/mentors.html" style="font-weight: 500; font-size: 16px;margin-top: 5px;">Mentorship</a></li>
+                  <li><a class="dropdown-item" href="../JobGuarantee/job_gruarantee.html" style="font-weight: 500; font-size: 16px;margin-top: 5px;">Job guarantee</a></li>
+                </ul>
+              </div>
+
+              <div class="dropdown">
+
+                <a class=" dropdown-toggle " id="nih" href="#" role="" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" >
+                    For Partners
+                </a>
+              
+                <ul class="dropdown-menu mt-4" aria-labelledby="dropdownMenuLink"  style="padding: 20px; border-radius: 15px; ">
+                  <li><a class="dropdown-item" href="../Universities/university.html" style="font-weight: 500; font-size: 16px;margin-top: 5px;">University</a></li>
+                  <li><a class="dropdown-item" href="../Business/business.html" style="font-weight: 500; font-size: 16px;margin-top: 5px;" >Businesses</a></li>
+                 
+                </ul>
+              </div>
+
+
+              
+
+              <div class="dropdown">
+
+                <a class=" dropdown-toggle" id="nih" href="#" role="" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" >
+                    Resources
+                </a>
+              
+                <ul class="dropdown-menu mt-4" aria-labelledby="dropdownMenuLink"  style="padding: 20px; border-radius: 15px; ">
+                  <li><a class="dropdown-item" href="../Payments/payment.html" style="font-weight: 500; font-size: 16px;margin-top: 5px;">Payment options</a></li>
+                  <li><a class="dropdown-item" href="../Scholarships/scholarships.html" style="font-weight: 500; font-size: 16px;margin-top: 5px;">Scholarships</a></li>
+                </ul>
+              </div>
+
+            <a class="h5-items " id="nih" href="../Blog/blog.html">Blog</a>
+        </div>
+        
+    </div>
+</div>
+
+
+    <nav id="sidebar" class="active" style="margin-top: 150px;">
+        <ul>
+          <li><a href="#step1">What Does a Systems Administrator Do?</a></li>
+          <li><a href="#step2">Meet the Educational Requirements (and Keep Learning)</a></li>
+          <li><a href="#step3">Develop and Hone Your Skillset</a></li>
+          <li><a href="#step4">Will AI Impact Systems Administration?</a></li>
+          <li><a href="#step5">Pursue a Certification (or Maybe More)</a></li>
+          <li><a href="#step6">Prepare for the Interviews</a></li>
+          
+          <!-- Add more steps as needed -->
+        </ul>
+      </nav>
+      <div id="content" style="padding-top: 150px;">
+        <header>
+          <h1 style="margin: 15px;">Learn How To Become a System Administrator </h1>
+         
+        </header>
+        <main style="margin: 15px;">
+          <section id="step1" class="step">
+            <h2>What Does a Systems Administrator Do?</h2>
+            <p>A systems administrator (or SysAdmin) is the backbone of an organization’s IT infrastructure. Their responsibilities include installing and maintaining hardware and software, configuring and managing servers and networks, and ensuring security.</p>
+            <p>A SysAdmin might also manage user accounts, set up backups, and recover lost data. Their work helps keep an organization’s digital operations running smoothly, and they often serve as the first line of defense when IT issues arise.</p>
+            <img src="https://www.springboard.com/blog/wp-content/uploads/2023/06/learn-how-to-become-a-system-administrator-700x467.jpeg" alt="Understanding the Role">
+          </section>
+          <section id="step2" class="step">
+            <h2>Meet the Educational Requirements (and Keep Learning)</h2>
+            <p>Most SysAdmin positions require a bachelor’s degree in computer science, information systems, or a related field. However, what’s even more important is the continuous pursuit of learning. Technology evolves rapidly, and as a systems administrator, you must stay ahead of these changes.</p>
+            <p>Regularly updating your knowledge through online courses, workshops, webinars, and industry-specific certifications, such as CompTIA Network+ or Microsoft Certified: Azure Administrator Associate is essential.</p>
+            <p>Besides, consider advanced degrees or specialized training in your areas of interest.</p>
+          </section>
+          <section id="step3" class="step">
+            <h2>Develop and Hone Your Skillset</h2>
+            <p>Becoming a systems administrator requires more than academic qualifications—it also demands developing a versatile skill set. Both technical knowledge and soft skills are essential to effectively manage IT infrastructures and communicate within an organization.</p>
+            <h4>Technical Skills</h4>
+            <p>For technical skills, proficiency in operating systems is crucial. You should be proficient with server management, network configuration, database management, and an understanding of cloud computing platforms like AWS or Azure.</p>
+            <h4>Soft Skills</h4>
+            <p>Problem-solving is at the heart of a systems administrator role. The ability to diagnose and troubleshoot issues under pressure is vital.
+
+                Communication skills are equally important, as you’ll often need to explain technical concepts to non-technical team members and assist users with their issues.
+                
+                Last but not least, time management, organization, and the ability to prioritize tasks in a fast-paced environment will help run the system smoothly.</p>
+          </section>
+          <section id="step4" class="step">
+            <h2>Will AI Impact Systems Administration?</h2>
+            <p>According to Gartner, by 2025, AI is predicted to take over mundane tasks in IT management, increasing efficiency and freeing time for IT professionals to focus on more strategic areas.
+
+                However, instead of replacing SysAdmins, AI will likely act as a powerful tool in their arsenal, automating repetitive tasks, predicting system issues before they occur, and providing deeper insights into system performance and security. SysAdmins must adapt by learning to work with AI tools and integrating them into their workflow, but they aren’t going to be replaced by them..</p>
+          </section>
+          <section id="step5" class="step">
+            <h2>Pursue a Certification (or Maybe More)</h2>
+            <p>Certifications demonstrate your dedication to continual learning and show employers you have the competencies they seek. Start with foundational certifications like CompTIA A+ for basic IT skills or Network+. As you gain experience, consider more advanced certifications such as Microsoft Certified: Azure Administrator Associate for cloud systems. If security is your interest, CompTIA Security+ or the Springboard Cybersecurity Bootcamp are worthwhile options.</p>
+          </section>
+          <section id="step6" class="step">
+            <h2>Prepare for the Interviews</h2>
+            <p>The interview is where you get to personally showcase your knowledge, skills, and potential. Anticipate common interview questions and practice your responses. Be ready to discuss specific instances where you’ve solved technical issues or improved a system’s efficiency.
+
+                And remember, interviewers aren’t just interested in your technical abilities—they’re also looking at your problem-solving skills, ability to work under pressure, and how well you fit into their team.</p>
+          </section>
+          
+        </main>
+        <!-- <footer>
+          <p>&copy; 2023 YourName. All rights reserved.</p>
+        </footer> -->
+      </div>
+
+
+</body>
+</html>
+
+<script>
+    const sidebar = document.getElementById('sidebar');
+const toggleBtn = document.getElementById('toggle-btn');
+
+toggleBtn.addEventListener('click', () => {
+  sidebar.classList.toggle('active');
+});
+</script>

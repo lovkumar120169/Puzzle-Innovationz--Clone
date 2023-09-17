@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+   
+}
+
+.enrollment-form {
+    width: 45%;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    
+}
+
+.enrollment-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.enrollment-form label {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.enrollment-form input[type="text"],
+.enrollment-form input[type="tel"],
+.enrollment-form select,
+.enrollment-form textarea,
+.enrollment-form input[type="url"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.enrollment-form input[type="text"]:focus,
+.enrollment-form input[type="tel"]:focus,
+.enrollment-form select:focus,
+.enrollment-form textarea:focus,
+.enrollment-form input[type="url"]:focus {
+    border-color: #007bff;
+}
+
+.enrollment-form select {
+    appearance: none;
+    padding: 12px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+    background-image: linear-gradient(to bottom, #f9f9f9, #f0f0f0);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.enrollment-form select option {
+    padding: 12px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.enrollment-form select option:hover {
+    background-color: #3da15b;
+    color: white;
+}
+
+.enrollment-form textarea {
+    resize: vertical;
+}
+
+.enrollment-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.enrollment-form button:hover {
+    background-color: #0056b3;
+}
+
+.enrollment-form:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 0 0;
+    border-color: #007bff transparent transparent transparent;
+    z-index: 1;
+}
+
+/* ... (any additional styles you want to add) ... */
+
+
+
+.h5-items{
+    font-family: 'Rubik', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.71);
+}
+.h5-items-s{
+    font-family: 'Rubik', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 8px;
+    color: rgba(0, 0, 0, 0.71);
+}
+.h1-items{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+}
+.p-items{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+.items-div{
+    background-color: #f7f8f7;
+    padding: 20px 30px;
+    width: 300px;
+    border-radius: 15px;
+    height:550px;
+}
+.Ec{
+    font-family: 'Rubik', sans-serif;
+    color: #67706B;
+    font-size: 18px;
+}
+.items-div h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #67706B;
+    margin-top:20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.hr-line{
+    color: rgba(0, 0, 0, 0.592);
+}
+.items-btn{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    height: 50px;
+    border: 1px solid #5E0BD1;
+    color: #5E0BD1;
+    border-radius: 5px;
+
+
+}
+.item-btn-apply{
+    color: white;
+    background-color: #5E0BD1;
+    margin-bottom: 10px;
+}
+.m-div{
+    /* background-image: url("../images/bgimg.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; */
+}
+.jg{
+    font-family: 'Rubik', sans-serif;
+    font-size: 12px;
+    color: #008E67;
+    margin-left: 10px;
+    background-color:#C7FFE1;
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+#navbar-s{
+    position: fixed;
+    /* background-color: white; */
+    z-index: 1000;
+    top:20px;
+    margin-top: -10px;
+
+}
+
+#nih{
+    font-size: 14px;color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600; 
+    font-family: 'Rubik', sans-serif;
+    margin-top: 5px;
+    cursor: pointer;
+}
+#nih:hover{
+    color: #008E67;
+}
+
+
+
+.green-bg {
+    background: #0e1356;
+    text-align: center;
+    padding-bottom: 12px;
+    padding: 25px;
+}
+
+.green-bg img{
+    width: 20%;
+
+}

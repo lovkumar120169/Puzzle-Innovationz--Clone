@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MentorShip</title>
+    <link rel="stylesheet" href="./mentors.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+        <link rel="icon" type="image/x-icon" href="../favicon.png">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+<body>
+    
+    <div style="width: 100%; background-color: white;" id="navbar-s">
+        <div
+            style="display: flex; gap: 15px; justify-content: end; align-items: center;padding-right: 30px; margin-top: -14px;margin-bottom: -15px;background-color: white;">
+            <div style="display: flex; gap: 5px; align-items: center;">
+                <img src="./assets/callimg.png" alt="">
+                <h5 class="h5-items-s" style="font-size: 14px;color: black;">Call us +1 415 966 2533</h5>
+            </div>
+            <div style="display: flex; gap: 5px; align-items: center;">
+                <img src="./assets/emailimg.png" alt="">
+                <h5 class="h5-items-s" style="font-size: 14px;color: black;">Example@gmail.com</h5>
+
+            </div>
+
+        </div>
+        <hr>
+<!-- second nav -->
+
+        <div style="display: flex; justify-content: space-around; align-items: center; height: 60px; ">
+            <div>
+                <a href="../../index.html">
+                    <img src="../logopuzzle2.png" alt="logo" style="width: 43%; margin:auto">
+                </a>
+                
+            </div>
+            <div style="display: flex; justify-content: space-around; gap: 50px;">
+                <div class="dropdown">
+
+                    <a class=" dropdown-toggle" id="nih" href="#" role="" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" >
+                        Courses
+                    </a>
+                  
+                    <ul class="dropdown-menu mt-4" aria-labelledby="dropdownMenuLink" style="padding: 30px; border-radius: 15px; width: 320px; ">
+                      <li><a class="dropdown-item" href="../DataAnalytics/dataAnalytics.html" style=" font-size: 20px;margin-top: 5px; align-items: center;"><img src="./assets/Analyticslogo.png" width="10%" class="mb-1" alt=""> Analytics</a></li>
+                      <li><a class="dropdown-item" href="../Data Science/datascience.html" style=" font-size: 20px;margin-top: 5px;"><img src="./assets/dataSciencelogo.png" width="10%" class="mb-1" alt=""> Data Science</a></li>
+                      <li><a class="dropdown-item" href="../UI/uiux.html" style=" font-size: 20px;margin-top: 5px;"><img src="./assets/Designlogo.png" width="10%" class="mb-1" alt=""> Design</a></li>
+                      <li><a class="dropdown-item" href="../Cybersecurity/bootcamp.html" style=" font-size: 20px;margin-top: 5px;"><img src="./assets/cybersecuritylogo.png" width="10%" class="mb-1" alt=""> Cybersecurity</a></li>
+                      <li><a class="dropdown-item" href="../Software Engineering Bootcamp/bootcamp.html" style=" font-size: 20px;margin-top: 5px;"><img src="./assets/codinglogo.png" width="10%" class="mb-1" alt=""> Coding</a></li>
+                      <li><a class="dropdown-item" href="../ML engineering/ML.html" style=" font-size: 20px;margin-top: 5px;"><img src="../mllogo.png" width="10%" class="mb-1" alt=""> Machine Learning</a></li>
+                      <li><a class="dropdown-item" href="../TechSales/techsales.html" style=" font-size: 20px;margin-top: 5px;"><img src="./assets/techsaleslogo.png" width="10%" class="mb-1" alt=""> Tech Sales</a></li>
+                      <hr>
+                      <!-- <p class="p-items">Still Unsure?</p>
+                      <h6 style="margin-top: -10px; margin-bottom: 20px;">Take our short career quiz</h6>
+
+                      <li><a class="dropdown-item" href="#" style="font-weight: 500; font-size: 16px;margin-top: 5px;"><button class="" style="padding: 10px 20px; font-size: 14px; font-weight: 600; color: white; border: 1px solid #5E0BD1; background-color: #5E0BD1; border-radius: 5px;width: 100%;" >View all courses</button></a></li> -->
+                    </ul>
+                  </div>
+
+                  <div class="dropdown">
+
+                    <a class=" dropdown-toggle" id="nih" href="#" role="" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" >
+                        Why Springboard
+                    </a>
+                  
+                    <ul class="dropdown-menu dd-items mt-4" aria-labelledby="dropdownMenuLink" style="padding: 20px; border-radius: 15px; ">
+                      <li><a class="dropdown-item" href="../howItsWork/howItsWork.html" style="font-weight: 500; font-size: 16px;margin-top: 5px;">How it works</a></li>
+                      <li><a class="dropdown-item" href="../Mentors/mentors.html" style="font-weight: 500; font-size: 16px;margin-top: 5px;">Mentorship</a></li>
+                      <li><a class="dropdown-item" href="../JobGuarantee/job_gruarantee.html" style="font-weight: 500; font-size: 16px;margin-top: 5px;">Job guarantee</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown">
+
+                    <a class=" dropdown-toggle " id="nih" href="#" role="" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" >
+                        For Partners
+                    </a>
+                  
+                    <ul class="dropdown-menu mt-4" aria-labelledby="dropdownMenuLink"  style="padding: 20px; border-radius: 15px; ">
+                      <li><a class="dropdown-item" href="../Universities/university.html" style="font-weight: 500; font-size: 16px;margin-top: 5px;">University</a></li>
+                      <li><a class="dropdown-item" href="../Business/business.html" style="font-weight: 500; font-size: 16px;margin-top: 5px;" >Businesses</a></li>
+                     
+                    </ul>
+                  </div>
+
+
+                  
+
+                  <div class="dropdown">
+
+                    <a class=" dropdown-toggle" id="nih" href="#" role="" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" >
+                        Resources
+                    </a>
+                  
+                    <ul class="dropdown-menu mt-4" aria-labelledby="dropdownMenuLink"  style="padding: 20px; border-radius: 15px; ">
+                      <li><a class="dropdown-item" href="../Payments/payment.html" style="font-weight: 500; font-size: 16px;margin-top: 5px;">Payment options</a></li>
+                      <li><a class="dropdown-item" href="../Scholarships/scholarships.html" style="font-weight: 500; font-size: 16px;margin-top: 5px;">Scholarships</a></li>
+                    </ul>
+                  </div>
+
+                <a class="h5-items " id="nih" href="../Blog/blog.html">Blog</a>
+            </div>
+            <div>
+                <a href="#photo">
+                    <button class="" style="padding: 10px 20px; font-size: 14px; font-weight: 600; color: white; border: 1px solid #5E0BD1; background-color: #5E0BD1; border-radius: 5px;" >Apply Now</button>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+
+    <div id="job-gurantee" style="margin-top:150px ;">
+        <div id="right-gurantee" style="padding-top: 80px;">
+            <h6 style="font-size: 12px;">MENTORSHIP</h6>
+            <h1 style="font-size: 50px; font-weight: 600;" >Mentorship makes the difference</h1>
+            <!-- <h2 style="font-size: 25px;">Become a data analyst. Land a job or your money back.</h2>
+            <h6 style="font-size: 15px;">OUR DATA ANALYTICS GRADUATES HAVE BEEN HIRED BY </h6>
+            <img src="./assets/Screenshot 2023-07-27 184220.png" width="70%" alt="" style="margin-top: 0px;"> -->
+            <div style="font-size: 25px;">
+                <img src="./assets/right-tick.png" width="35px" alt="">
+                <h3 style="font-size: 20px;">Working industry professionals who will help you achieve your goals</h3>
+                <img src="./assets/right-tick.png" width="35px" alt="">
+                <h3 style="font-size: 20px;">Provide accountability, feedback, and guidance at every stage of your learning journey</h3>
+                <img src="./assets/right-tick.png" width="35px" alt="">
+                <h3 style="font-size: 20px;">
+                    Know what the industry demands and what hiring managers want</h3>
+                
+            </div>
+            <a href="#photo">
+
+                <button>Apply Now</button>
+            </a>
+        </div>
+        <div id="left-gurantee">
+            <div><img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,h_525,q_auto,f_auto,dpr_auto,fl_lossy/v1677795719/website-redesign/lifestyle-photography/mentorship-makes-difference-springboard-hero.webp" alt="" style="border-radius: 10px;"></div>
+
+            <!-- <div>
+                <a>Sarah Savage</a>
+                <h5>
+                    Data Analytics Graduate
+
+                </h5>
+                <p>From <span>School Teacher</span></p>
+                <p>To <span> Data Analyst @ edX</span>
+                </p>
+
+                <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,h_32,q_auto,f_auto,dpr_auto,fl_lossy/v1677269445/website-redesign/company-logos/edEX_Logo.webp" width="100px">
+            </div> -->
+
+        </div>
+    </div>
+
+    <div class="overview-card" style="margin-top: 100px;">
+        <div>
+            <h6>
+                1:1 SUPPORT FROM AN INDUSTRY INSIDER
+            </h6>
+            <h1 style="margin: 25px; font-weight: 600;">
+                What is Springboard mentorship?
+            </h1>
+            <p>Mentorship is personalized learning instead of one-way teaching. Unlike a class instructor, who presents material once and expects you to grasp it, your mentor will work with you individually.</p>
+        </div>
+        <div class="overview-inner-card">
+            <div>
+                <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1677563440/website-redesign/lifestyle-photography/Mentorship_features.webp"
+                    width="10%" alt="" id="mentorimg">
+            </div>
+            <div>
+                <h3>Your mentor will:</h3>
+                <div>
+                    <img src="./assets/right-tick.png" width="35px" alt="">
+                    <p>Guide you through the curriculum and familiarize you with industry tools, answer questions, and remove blockers</p>
+                    <img src="./assets/right-tick.png" width="35px" alt="">
+                    <p>Help you plan, create, and structure excellent portfolio projects via regular feedback</p>
+                    <img src="./assets/right-tick.png" width="35px" alt="">
+                    <p>Provide industry guidance and an insider's perspective of the work in your chosen field</p>
+                    
+                </div>
+        
+            </div>
+        </div>
+    </div>
+
+    <div id="ninty">
+        <div><img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1677269965/website-redesign/illustrations-and-charts/90-Percent-Workers-Happier-Mentorship-Stat-CNBC-Work.webp" alt=""></div>
+        <div>
+            <h1>Does mentorship really matter?</h1>
+            <h5>Yes. The data doesn't lie — mentorship provides a serious edge.</h5>
+            <p>Professionals in mentorship programs are 5x more likely to be promoted and get a pay raise. (LinkedIn)
+                <br> <br>
+
+                76% of professionals think mentors are important, but only 37% have one. (Forbes)</p>
+        </div>
+    </div>
+
+    <section id="greenscreen">
+        <p>THE SPRINGBOARD DIFFERENCE</p>
+        <h1>Take the guesswork out of getting ahead</h1>
+        <p>Build skills. Learn by doing. Get the support you need. Land the job you want.</p>
+        <div class="insidegreen">
+            <div>
+                <h1>Make your move in 3 to 9 months</h1>
+                <p>An online, flexible program to fit your life
+
+                    Springboard programs help you grow and evolve at your own pace. No need to quit your job or put your life on hold.</p>
+            </div>
+            <div>
+                <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1677266151/website-redesign/lifestyle-photography/flexible-schedule-learn-online-night.webp" alt="">
+            </div>
+        </div>
+        <div class="insidegreen">
+            <div>
+                <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1677266648/website-redesign/lifestyle-photography/hands-on-learning-projects-curriculum-springboard.webp" alt="">
+            </div>
+            <div>
+                <h1>Learn deeper with hands-on projects</h1>
+                <p>Practice the skills you’ll use in the real world
+
+                    Unlike other online courses, here you'll build a portfolio that will give you an edge with employers.</p>
+            </div>
+        </div>
+        <div class="insidegreen">
+            <div>
+                <h1>Work with a team of real people invested in your success</h1>
+                <p>Learn from the best to be your best
+
+                    You'll work 1-on-1 with a mentor, career coach, and student advisor. They'll help you define your path, knock down obstacles, and meet your goals.</p>
+            </div>
+            <div>
+                <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1677266574/website-redesign/lifestyle-photography/real-humans-support-mentorship-springboard.webp" alt="">
+            </div>
+        </div>
+        <div class="insidegreen">
+            <div>
+                <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1677792178/website-redesign/Badges/Springboard-Job-Guarantee-Badge-Rev.webp" alt="">
+            </div>
+            <div>
+                <h1>Land a job or your money back</h1>
+                <p>Invest in yourself with confidence
+
+                    Get a job within six months of graduation or get a full tuition refund. Terms apply.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="accordion" style="margin-top: 50px;">
+        <div class="accordion-item">
+          <div class="accordion-title" onclick="toggleAccordion('content1')">
+            What does a mentor do?
+            <span class="arrow">&#x25BC;</span>
+          </div>
+          <div class="accordion-content" id="content1">
+            Think of your mentor as your own personal guide to building your future. During your one-on-one interactions, you’ll learn from their successes and missteps. They’ll keep you updated on today’s tech and insider tips, hold you accountable, and challenge your comfort zone. Your mentor is there to help you work through the curriculum, familiarize you with tools, answer questions and remove blockers. Their hard-earned wisdom can help you break new ground and take your career to places you never thought possible
+
+          </div>
+        </div>
+        <hr>
+        <div class="accordion-item">
+          <div class="accordion-title" onclick="toggleAccordion('content2')">
+            How are mentors selected?
+            <span class="arrow">&#x25BC;</span>
+          </div>
+          <div class="accordion-content" id="content2">
+            We want you to receive the best guidance and feedback, so when it comes to bringing mentors on board, we are extremely selective. Mentors must have a minimum of 3-4 years’ experience and are rigorously tested for curiosity, resilience, adaptability, and likeability. Why? Because when you’re working one-on-one with somebody and providing personalized learning, empathy, and accessibility are just as important as expertise.
+
+            We hire the best professionals and make them the best mentors. Our mentors work at companies like Netflix, Spotify, and Amazon, and although they’re brilliant at what they do, they must receive additional training before they start mentoring Springboard students. 
+          </div>
+        </div>
+        <hr>
+        <div class="accordion-item">
+          <div class="accordion-title" onclick="toggleAccordion('content3')">
+            What can I expect in a meeting with my mentor?
+            <span class="arrow">&#x25BC;</span>
+          </div>
+          <div class="accordion-content" id="content3">
+            You meet with your mentor regularly for one-on-one guidance where you can:
+             <br> <br>
+            Ask the questions that matter to you, and get feedback on your progress
+            <br> <br>
+            Get help planning, creating, structuring, and refining portfolio projects, so you stand out to future employers
+            <br> <br>
+            Learn what the industry demands and what hiring managers want
+          </div>
+        </div>
+      </div>
+
+
+      <footer class="card" >
+        <div class="content" style=" background-color: #0e1856;">
+            <!-- Add your content here (e.g., title, description, buttons, etc.) -->
+
+            <div class="footertop">
+                <img src="../logopuzzle3.png"
+                    alt="logo">
+                <div>
+                    <a href="#"><img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1677703102/website-redesign/social-media-icons/YouTube-Icon-White-Circle-Springboard.webp"
+                        alt=""></a>
+
+
+                    <a href="#"><img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1677703102/website-redesign/social-media-icons/Instagram-Icon-White-Circle-Springboard.webp"
+                        alt=""></a>
+
+                    <a href="#"><img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1677703102/website-redesign/social-media-icons/Facebook-Icon-White-Circle-Springboard.webp"
+                        alt=""></a>
+                    
+                        <a href="#"><img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1677703102/website-redesign/social-media-icons/LinkedIn-Icon-White-Circle-Springboard.webp"
+                            alt=""></a>
+                    
+                    <a href="#"><img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1677703103/website-redesign/social-media-icons/Twitter-Icon-White-Circle-Springboard.webp"
+                        alt=""></a>        
+
+                    
+                </div>
+            </div>
+            <div class="footerbottom">
+
+                <div>
+                    <p href="#" class="footercolor">DESIGN</p>
+                    <a href="../UI/uiux.html">UI/UX Design Bootcamp</a>
+                    <a href="../UI/uiux.html">UX Design Bootcamp</a>
+                    
+                    <p  class="footercolor">ANALYTICS</p>
+                    <a href="../DataAnalytics/dataAnalytics.html">Data Analytics Bootcamp</a>
+                    <a href="./dataAnalytics.html">Introduction to Data Analytics</a>
+                    <p href="#" class="footercolor">DATA SCIENCE</p>
+                    <a href="../Data Science/datascience.html">Data Science Bootcamp</a>
+                    <a href="../ML engineering/ML.html">ML Engineering Bootcamp</a>
+                    <a href="#">Data Engineering Bootcamp</a>
+                </div>
+                <div>
+                    <p class="footercolor">SOFTWARE ENGINEERING</p>
+                    <a href="../Software Engineering Bootcamp/bootcamp.html">Software Engineering</a>
+                    <a href="../Software Engineering Bootcamp/bootcamp.html">Software Engineering Prep</a>
+                    <p class="footercolor">CYBERSECURITY</p>
+                    <a href="../Cybersecurity/bootcamp.html">Cybersecurity Bootcamp</a>
+                    <p class="footercolor">TECH SALES</p>
+                    <a href="../TechSales/techsales.html">Tech Sales Bootcamp</a>
+                </div>
+                <div>
+                    <p class="footercolor">WHY OUR BOOTCAMP</p>
+                    <a href="../howItsWork/howItsWork.html">How it works</a>
+                    <a href="../Mentors/mentors.html">Mentorship</a>
+                    <a href="../JobGuarantee/job_gruarantee.html">Job guarantee</a>
+                    
+                </div>
+                <div>
+                    <p class="footercolor">FOR PARTNERS</p>
+                    <a href="../Universities/university.html">Unversities</a>
+                    <a href="../Business/business.html">Businesses</a>
+                    <p class="footercolor">RESOURCES</p>
+                    <a href="#">Blog</a>
+                    <a href="../Payments/payment.html">Payments</a>
+                    <a href="../Scholarships/scholarships.html">Scholarships</a>
+                    
+                </div>
+                <div>
+                    <p class="footercolor">BLOG</p>
+                    <a href="../Blog/blog.html">Blog</a>
+                    
+                    <p class="footercolor">FOR INQUIRIES</p>
+                    <h5 href="#" style="color: wheat;">example@gmail.com</h5>
+                </div>
+
+            </div>
+            <hr style="color: white;">
+        </div>
+        <div class="photo" id="photo" style="background-color:#70c4f5;">
+            <div>
+                <h1 class="formabove">Ready to accelerate your career? Apply now
+                </h1>
+                <p>ENTER YOUR EMAIL <span id="star">*</span></p>
+
+                <form id="startform">
+                    <input type="text" name="" id="emailID" placeholder="name@email.com">
+                    <input type="submit" value="Apply Now">
+                </form>
+
+
+            </div>
+            <div>
+                <div class="outimg">
+                    <div class="innerimg">
+                        <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,h_100,q_auto,f_webp,dpr_auto,fl_lossy/v1677269306/website-redesign/student-story-images/SB_UXC_Student_Story_Jeffrey_Surban.webp"
+                            alt="">
+                        <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,h_100,q_auto,f_webp,dpr_auto,fl_lossy/v1677269292/website-redesign/student-story-images/SB_IXC_Student_Story_3up_Avatar-Valena-Del-Valle.webp"
+                            alt="">
+                        <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,h_100,q_auto,f_webp,dpr_auto,fl_lossy/v1677269271/website-redesign/student-story-images/SB_SEC_Student_Story_3up_Avatar-Julia-Ayres.webp"
+                            alt="">
+                        <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,h_100,q_auto,f_webp,dpr_auto,fl_lossy/v1677269225/website-redesign/student-story-images/SB_DSC_Student_Story_3up_Avatar-Rane_Najera_Wynne.webp"
+                            alt="">
+                    </div>
+                    <p>JOIN 10,000+ LEARNERS</p>
+                </div>
+                <p id="imgtext">At our Bootcamp, career progress shows up when you do. We’re here to guide you from
+                    where you are to the workplaces you want to be.</p>
+                <hr>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>
+
+
+<script>
+    function toggleAccordion(contentId) {
+    var content = document.getElementById(contentId);
+    var items = document.getElementsByClassName('accordion-content');
+
+    for (var i = 0; i < items.length; i++) {
+      if (items[i].id !== contentId) {
+        items[i].style.display = 'none';
+      }
+    }
+
+    if (content.style.display === 'block') {
+      content.style.display = 'none';
+    } else {
+      content.style.display = 'block';
+    }
+
+    var arrows = document.getElementsByClassName('arrow');
+    for (var i = 0; i < arrows.length; i++) {
+      arrows[i].textContent = '\u25BC';
+    }
+
+    var currentArrow = content.previousElementSibling.querySelector('.arrow');
+    currentArrow.textContent = '\u25B2';
+  }
+  </script>
+
+<script src="../form2.js"></script>

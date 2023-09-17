@@ -1,0 +1,163 @@
+*{
+    font-family: 'Lato', sans-serif;
+}
+.card {
+    position: relative; /* To create a reference positioning for absolute positioning */
+    width: 100%; /* Adjust the width as per your requirement */
+    overflow: hidden; /* This ensures that the photo won't overflow outside the card */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add some shadow for a visual effect */
+    text-align: left;  
+    margin-top: 35px;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .photo {
+    position: absolute;
+    top: 0px; /* Adjust the value to control the vertical position of the photo */
+    left: 50%; /* Center the photo horizontally */
+    transform: translateX(-50%); /* Center the photo horizontally */
+    box-shadow: 0 2px 4px rgba(144, 118, 118, 0.1); /* Optional: Add a shadow around the photo */
+    z-index: 999; /* Ensure the photo appears on top of the content */
+    background-color:#C3F570;  
+    display: flex;
+    width: 85%;
+    padding: 40px;
+    justify-content: space-around;
+    border-radius: 25px;
+}
+  
+  .content {
+    position: relative; /* Ensure the content div is in its normal flow */
+    padding: 100px; /* Adjust the padding as per your requirement */
+    padding-top: 200px;
+    background-color: #0E5642; /* Choose a suitable background color for the content area */
+    z-index: 1; /* Ensure the content appears below the photo */
+    margin-top: 170px;
+  }
+  
+  .innerimg{
+    display: flex;
+    flex-direction: row;
+   
+  }
+
+  .innerimg img{
+    width: 60px;
+    margin: 8px;
+    border-radius: 50%;
+  }
+
+  .outimg{
+    display: flex;
+   
+    justify-content: space-between;
+  }
+
+  .photo>div{
+    width:40%
+  }
+  .formabove{
+    font-family: 'Lato', sans-serif;
+    font-weight:
+        600;
+    font-size: 40px;
+    
+    Color:
+        #05082b;
+  }
+
+  .photo p{
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  #startform{
+    background-color: rgb(252, 252, 252);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+  }
+
+  #startform input{
+    margin: 10px;
+  }
+
+  #startform input[type="text"]{
+    border:none;
+    outline:none;
+    font-size: 20px;
+  }
+
+  #startform input[type="submit"]{
+     border: none;
+     color: white;
+     background-color: #5E0BD1;
+     padding: 13px;
+     font-size: 19px;
+     font-weight: 500;
+     border-radius: 5px;
+  }
+
+  #star{
+    color: red;
+  }
+
+  .outimg p{
+    margin: 25px;
+  }
+  
+  #imgtext{
+    font-size: 22px;
+    font-weight: 400;
+  }
+
+  .footertop{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+  }
+
+  .footertop>div>a>img{
+    width: 45px;
+    margin: 0 5px;
+  }
+
+  .footertop>img{
+    width: 200px;
+  }
+
+  .footerbottom{
+    display: flex;
+    justify-content: space-around;
+    margin: 35px 0px;
+  }
+
+  .footerbottom>div{
+    display: flex;
+    width: 18%;
+    flex-direction: column;
+  }
+
+  .footercolor{
+    color: #7BE3AA;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 20px 0px;
+  }
+
+  .footerbottom a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    margin-top: 8px;
+
+  }
+
+  
+
+  footer a:hover{
+    color: white;
+  }
