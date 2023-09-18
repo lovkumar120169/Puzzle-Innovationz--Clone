@@ -10,23 +10,75 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css">
+
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css" rel="stylesheet" />
+
+
+
+    <link rel="icon" type="image/x-icon" href="./pages/favicon.png">
+
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
-        <link rel="icon" type="image/x-icon" href="./pages/favicon.png">
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-        
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="node_modules/mdbootstrap/js/jquery.min.js"></script>
+    <script type="text/javascript" src="node_modules/mdbootstrap/js/popper.min.js"></script>
+    <script type="text/javascript" src="node_modules/mdbootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="node_modules/mdbootstrap/js/mdb.min.js"></script>
+
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
+
+
+
+
+    <style>
+        /* Custom style */
+        .courseBtn::after {
+          background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+          transform: scale(.7) !important;
+        }
+        .courseBtn:not(.collapsed)::after {
+          background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+        }
+    </style>
 </head>
 
 <body>
-    
+
     <div style="width: 100%; background-color: white;" id="navbar-s">
-        <div
-            style="display: flex; gap: 15px; justify-content: end; align-items: center;padding-right: 30px; margin-top: -14px;margin-bottom: -15px;background-color: white;">
+        <div id="top-nav">
             <div style="display: flex; gap: 5px; align-items: center;">
                 <img src="./images/callimg.png" alt="">
                 <h5 class="h5-items-s" style="font-size: 14px;color: black;">Call us +1 415 966 2533</h5>
@@ -39,85 +91,302 @@
 
         </div>
         <hr>
-<!-- second nav -->
+        <!-- second nav -->
 
-        <div style="display: flex; justify-content: space-around; align-items: center; height: 60px; ">
-            <div>
-                <img src="./pages/logopuzzle2.png" alt=""  style="width:43%;margin: auto;">
+        <div id="second-nav">
+            <div id="logo-site">
+                <img src="./pages/logopuzzle2.png" alt="" style="width:43%;margin: auto;">
             </div>
-            <div style="display: flex; justify-content: space-around; gap: 50px;">
+            <div id="nav-items">
                 <div class="dropdown">
 
-                    <a class=" dropdown-toggle" id="nih" href="#" role="" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" >
+                    <a class=" dropdown-toggle" id="nih" href="#" role="" id="dropdownMenuLink"
+                        data-bs-toggle="dropdown" aria-expanded="false">
                         Courses
                     </a>
-                  
-                    <ul class="dropdown-menu mt-4" aria-labelledby="dropdownMenuLink" style="padding: 30px; border-radius: 15px; width: 320px; ">
-                      <li><a class="dropdown-item" href="./pages/DataAnalytics/dataAnalytics.html" style=" font-size: 20px;margin-top: 5px; align-items: center;"><img src="./images/Analyticslogo.png" width="10%" class="mb-1" alt=""> Analytics</a></li>
-                      <li><a class="dropdown-item" href="./pages/Data Science/datascience.html" style=" font-size: 20px;margin-top: 5px;"><img src="./images/dataSciencelogo.png" width="10%" class="mb-1" alt=""> Data Science</a></li>
-                      <li><a class="dropdown-item" href="./pages/UI/uiux.html" style=" font-size: 20px;margin-top: 5px;"><img src="./images/Designlogo.png" width="10%" class="mb-1" alt=""> Design</a></li>
-                      <li><a class="dropdown-item" href="./pages/Cybersecurity/bootcamp.html" style=" font-size: 20px;margin-top: 5px;"><img src="./images/cybersecuritylogo.png" width="10%" class="mb-1" alt=""> Cybersecurity</a></li>
-                      <li><a class="dropdown-item" href="./pages/Software Engineering Bootcamp/bootcamp.html" style=" font-size: 20px;margin-top: 5px;"><img src="./images/codinglogo.png" width="10%" class="mb-1" alt=""> Coding</a></li>
-                      <li><a class="dropdown-item" href="./pages/ML engineering/ML.html" style=" font-size: 20px;margin-top: 5px;"><img src="./pages/mllogo.png" width="10%" class="mb-1" alt=""> Machine Learning</a></li>
 
-                      <li><a class="dropdown-item" href="./pages/TechSales/techsales.html" style=" font-size: 20px;margin-top: 5px;"><img src="./images/techsaleslogo.png" width="10%" class="mb-1" alt=""> Tech Sales</a></li>
-                      <hr>
-                      <!-- <p class="p-items">Still Unsure?</p>
+                    <ul class="dropdown-menu mt-4" aria-labelledby="dropdownMenuLink"
+                        style="padding: 30px; border-radius: 15px; width: 320px; ">
+
+                        <li><a class="dropdown-item" href="./pages/DataAnalytics/dataAnalytics.html"
+                                style=" font-size: 20px;margin-top: 5px; align-items: center;"><img
+                                    src="./images/Analyticslogo.png" width="10%" class="mb-1" alt=""> Analytics</a></li>
+                        <li><a class="dropdown-item" href="./pages/Data Science/datascience.html"
+                                style=" font-size: 20px;margin-top: 5px;"><img src="./images/dataSciencelogo.png"
+                                    width="10%" class="mb-1" alt=""> Data Science</a></li>
+                        <li><a class="dropdown-item" href="./pages/UI/uiux.html"
+                                style=" font-size: 20px;margin-top: 5px;"><img src="./images/Designlogo.png" width="10%"
+                                    class="mb-1" alt=""> Design</a></li>
+                        <li><a class="dropdown-item" href="./pages/Cybersecurity/bootcamp.html"
+                                style=" font-size: 20px;margin-top: 5px;"><img src="./images/cybersecuritylogo.png"
+                                    width="10%" class="mb-1" alt=""> Cybersecurity</a></li>
+                        <li><a class="dropdown-item" href="./pages/Software Engineering Bootcamp/bootcamp.html"
+                                style=" font-size: 20px;margin-top: 5px;"><img src="./images/codinglogo.png" width="10%"
+                                    class="mb-1" alt=""> Coding</a></li>
+                        <li><a class="dropdown-item" href="./pages/ML engineering/ML.html"
+                                style=" font-size: 20px;margin-top: 5px;"><img src="./pages/mllogo.png" width="10%"
+                                    class="mb-1" alt=""> Machine Learning</a></li>
+
+                        <li><a class="dropdown-item" href="./pages/TechSales/techsales.html"
+                                style=" font-size: 20px;margin-top: 5px;"><img src="./images/techsaleslogo.png"
+                                    width="10%" class="mb-1" alt=""> Tech Sales</a></li>
+                        <hr>
+                        <!-- <p class="p-items">Still Unsure?</p>
                       <h6 style="margin-top: -10px; margin-bottom: 20px;">Take our short career quiz</h6>
-
+    
                       <li><a class="dropdown-item" href="#" style="font-weight: 500; font-size: 16px;margin-top: 5px;"><button class="" style="padding: 10px 20px; font-size: 14px; font-weight: 600; color: white; border: 1px solid #5E0BD1; background-color: #5E0BD1; border-radius: 5px;width: 100%;" >View all courses</button></a></li> -->
                     </ul>
-                  </div>
+                </div>
 
-                  <div class="dropdown">
+                <div class="dropdown">
 
-                    <a class=" dropdown-toggle" id="nih" href="#" role="" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" >
-                        Why Springboard
+                    <a class=" dropdown-toggle" id="nih" href="#" role="" id="dropdownMenuLink"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Why OurBootcamp
                     </a>
-                  
-                    <ul class="dropdown-menu dd-items mt-4" aria-labelledby="dropdownMenuLink" style="padding: 20px; border-radius: 15px; ">
-                      <li><a class="dropdown-item" href="./pages/howItsWork/howItsWork.html" style="font-weight: 500; font-size: 16px;margin-top: 5px;">How it works</a></li>
-                      <li><a class="dropdown-item" href="./pages/Mentors/mentors.html" style="font-weight: 500; font-size: 16px;margin-top: 5px;">Mentorship</a></li>
-                      <li><a class="dropdown-item" href="./pages/JobGuarantee/job_gruarantee.html" style="font-weight: 500; font-size: 16px;margin-top: 5px;">Job guarantee</a></li>
-                      
+
+                    <ul class="dropdown-menu dd-items mt-4" aria-labelledby="dropdownMenuLink"
+                        style="padding: 20px; border-radius: 15px; ">
+                        <li><a class="dropdown-item" href="./pages/howItsWork/howItsWork.html"
+                                style="font-weight: 500; font-size: 16px;margin-top: 5px;">How it works</a></li>
+                        <li><a class="dropdown-item" href="./pages/Mentors/mentors.html"
+                                style="font-weight: 500; font-size: 16px;margin-top: 5px;">Mentorship</a></li>
+                        <li><a class="dropdown-item" href="./pages/JobGuarantee/job_gruarantee.html"
+                                style="font-weight: 500; font-size: 16px;margin-top: 5px;">Job guarantee</a></li>
+
                     </ul>
-                  </div>
+                </div>
 
-                  <div class="dropdown">
+                <div class="dropdown">
 
-                    <a class=" dropdown-toggle " id="nih" href="#" role="" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" >
+                    <a class=" dropdown-toggle " id="nih" href="#" role="" id="dropdownMenuLink"
+                        data-bs-toggle="dropdown" aria-expanded="false">
                         For Partners
                     </a>
-                  
-                    <ul class="dropdown-menu mt-4" aria-labelledby="dropdownMenuLink"  style="padding: 20px; border-radius: 15px; ">
-                      <li><a class="dropdown-item" href="./pages/Universities/university.html" style="font-weight: 500; font-size: 16px;margin-top: 5px;">University</a></li>
-                      <li><a class="dropdown-item" href="./pages/Business/business.html" style="font-weight: 500; font-size: 16px;margin-top: 5px;" >Businesses</a></li>
-                      
+
+                    <ul class="dropdown-menu mt-4" aria-labelledby="dropdownMenuLink"
+                        style="padding: 20px; border-radius: 15px; ">
+                        <li><a class="dropdown-item" href="./pages/Universities/university.html"
+                                style="font-weight: 500; font-size: 16px;margin-top: 5px;">University</a></li>
+                        <li><a class="dropdown-item" href="./pages/Business/business.html"
+                                style="font-weight: 500; font-size: 16px;margin-top: 5px;">Businesses</a></li>
+
                     </ul>
-                  </div>
+                </div>
 
 
-                  
 
-                  <div class="dropdown">
 
-                    <a class=" dropdown-toggle" id="nih" href="#" role="" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" >
+                <div class="dropdown">
+
+                    <a class=" dropdown-toggle" id="nih" href="#" role="" id="dropdownMenuLink"
+                        data-bs-toggle="dropdown" aria-expanded="false">
                         Resources
                     </a>
-                  
-                    <ul class="dropdown-menu mt-4" aria-labelledby="dropdownMenuLink"  style="padding: 20px; border-radius: 15px; ">
-                      <li><a class="dropdown-item" href="./pages/Payments/payment.html" style="font-weight: 500; font-size: 16px;margin-top: 5px;">Payment options</a></li>
-                      <li><a class="dropdown-item" href="./pages/Scholarships/scholarships.html" style="font-weight: 500; font-size: 16px;margin-top: 5px;">Scholarships</a></li>
+
+                    <ul class="dropdown-menu mt-4" aria-labelledby="dropdownMenuLink"
+                        style="padding: 20px; border-radius: 15px; ">
+                        <li><a class="dropdown-item" href="./pages/Payments/payment.html"
+                                style="font-weight: 500; font-size: 16px;margin-top: 5px;">Payment options</a></li>
+                        <li><a class="dropdown-item" href="./pages/Scholarships/scholarships.html"
+                                style="font-weight: 500; font-size: 16px;margin-top: 5px;">Scholarships</a></li>
                     </ul>
-                  </div>
+                </div>
 
                 <a class="h5-items " id="nih" href="./pages/Blog/blog.html">Blog</a>
             </div>
             <div>
                 <a href="#photo">
-                    <button class="" style="padding: 10px 20px; font-size: 14px; font-weight: 600; color: white; border: 1px solid #5E0BD1; background-color: #5E0BD1; border-radius: 5px;" >Apply Now</button>
+                    <button class="" id="aply-btn"
+                        style="padding: 10px 20px; font-size: 14px; font-weight: 600; color: white; border: 1px solid #5E0BD1; background-color: #5E0BD1; border-radius: 5px;">Apply
+                        Now</button>
                 </a>
-                
+
+
+                <!-- ham-collapse -->
+
+
+                <div id="hb-item">
+                    <nav class="navbar navbar-light amber lighten-4 mb-4" id="hamburgur" style="box-shadow: none;">
+                        <button class="navbar-toggler first-button" id="ham-collapse" type="button"
+                            data-toggle="collapse" data-target="#navbarSupportedContent20"
+                            aria-controls="navbarSupportedContent20" aria-expanded="false"
+                            aria-label="Toggle navigation"
+                            style="display: flex;justify-content: space-between;align-items: center;width: 100%;">
+                            <img src="./pages/logopuzzle2.png" alt="" width="150px">
+                            <div class="animated-icon1"><span style="background-color: rgb(36, 56, 105);"></span><span
+                                    style="background-color: rgb(36, 56, 105);"></span><span
+                                    style="background-color: rgb(36, 56, 105);"></span></div>
+                        </button>
+
+                        <!-- Collapsible content -->
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent20">
+
+
+
+
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header " id="headingFive">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseFive" aria-expanded="false"
+                                            aria-controls="collapseFive">
+                                            Courses
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul style="list-style-type: none;">
+                                                <li><a class="dropdown-item"
+                                                        href="./pages/DataAnalytics/dataAnalytics.html"
+                                                        style=" font-size: 20px;margin-top: 5px; align-items: center;"><img
+                                                            src="./images/Analyticslogo.png" width="10%" class="mb-1"
+                                                            alt=""> Analytics</a></li>
+
+                                                <li><a class="dropdown-item"
+                                                        href="./pages/Data Science/datascience.html"
+                                                        style=" font-size: 20px;margin-top: 5px;"><img
+                                                            src="./images/dataSciencelogo.png" width="10%" class="mb-1"
+                                                            alt=""> Data Science</a></li>
+                                                <li><a class="dropdown-item" href="./pages/UI/uiux.html"
+                                                        style=" font-size: 20px;margin-top: 5px;"><img
+                                                            src="./images/Designlogo.png" width="10%" class="mb-1"
+                                                            alt="">
+                                                        Design</a></li>
+                                                <li><a class="dropdown-item" href="./pages/Cybersecurity/bootcamp.html"
+                                                        style=" font-size: 20px;margin-top: 5px;"><img
+                                                            src="./images/cybersecuritylogo.png" width="10%"
+                                                            class="mb-1" alt=""> Cybersecurity</a></li>
+                                                <li><a class="dropdown-item"
+                                                        href="./pages/Software Engineering Bootcamp/bootcamp.html"
+                                                        style=" font-size: 20px;margin-top: 5px;"><img
+                                                            src="./images/codinglogo.png" width="10%" class="mb-1"
+                                                            alt="">
+                                                        Coding</a></li>
+                                                <li><a class="dropdown-item" href="./pages/ML engineering/ML.html"
+                                                        style=" font-size: 20px;margin-top: 5px;"><img
+                                                            src="./pages/mllogo.png" width="10%" class="mb-1" alt="">
+                                                        Machine Learning</a></li>
+
+                                                <li><a class="dropdown-item" href="./pages/TechSales/techsales.html"
+                                                        style=" font-size: 20px;margin-top: 5px;"><img
+                                                            src="./images/techsaleslogo.png" width="10%" class="mb-1"
+                                                            alt=""> Tech Sales</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            Why OurBootcamp
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul style="list-style-type: none;">
+                                                <li><a class="dropdown-item" href="./pages/howItsWork/howItsWork.html"
+                                                        style="font-weight: 500; font-size: 16px;margin-top: 5px;">How
+                                                        it
+                                                        works</a></li>
+                                                <hr>
+                                                <li><a class="dropdown-item" href="./pages/Mentors/mentors.html"
+                                                        style="font-weight: 500; font-size: 16px;margin-top: 5px;">Mentorship</a>
+                                                </li>
+                                                <hr>
+                                                <li><a class="dropdown-item"
+                                                        href="./pages/JobGuarantee/job_gruarantee.html"
+                                                        style="font-weight: 500; font-size: 16px;margin-top: 5px;">Job
+                                                        guarantee</a></li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Resources
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul style="list-style-type: none;">
+                                                <li><a class="dropdown-item" href="./pages/Payments/payment.html"
+                                                        style="font-weight: 500; font-size: 16px;margin-top: 5px;">Payment
+                                                        options</a></li>
+                                                <hr>
+                                                <li><a class="dropdown-item"
+                                                        href="./pages/Scholarships/scholarships.html"
+                                                        style="font-weight: 500; font-size: 16px;margin-top: 5px;">Scholarships</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                            aria-expanded="false" aria-controls="collapseFour">
+                                            For Partners
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <ul style="list-style-type: none;">
+                                                <li><a class="dropdown-item" href="./pages/Universities/university.html"
+                                                        style="font-weight: 500; font-size: 16px;margin-top: 5px;">University</a>
+                                                </li>
+                                                <hr>
+                                                <li><a class="dropdown-item" href="./pages/Business/business.html"
+                                                        style="font-weight: 500; font-size: 16px;margin-top: 5px;">Businesses</a>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    style="margin-top: 20px;display: flex;justify-content: space-around;align-items: center;">
+                                    <a href="#photo">
+                                        <button class="" id="apply-now"
+                                            style="padding: 10px 20px; font-size: 14px; font-weight: 600; color: white; border: 1px solid #5E0BD1; background-color: #5E0BD1; border-radius: 5px;">Apply
+                                            Now</button>
+                                    </a>
+                                    <div style="display: flex; gap: 5px; align-items: center;">
+                                        <img src="./images/callimg.png" alt="">
+                                        <h5 class="h5-items-s" style="font-size: 14px;color: black;">Call us +1 415 966
+                                            2533</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <!-- Collapsible content -->
+
+                    </nav>
+                </div>
+
             </div>
         </div>
     </div>
@@ -125,22 +394,38 @@
     <section id="tophome" style="margin-top: 100px;">
         <div>
             <h1>Learn online with a job guarantee</h1>
-            <p>Learn through projects. Work 1-on-1 with a mentor and career coach. <br>Land a job or your money back.</p>
+            <p>Learn through projects. Work 1-on-1 with a mentor and career coach. <br>Land a job or your money back.
+            </p>
 
             <p class="course">Our courses:</p>
-            
-                <a href="#photo">
-                    <button>Data</button>
-                    <button>Design</button>
-                    <button>Coding</button>
-                    <button>Cybersec</button>
-                    <button>TechSales</button>
-                </a>
-            <br>
-            <a href="#photo">
 
-                <button style="color:aliceblue;background-color: #5E0BD1; text-align: left; margin-left: -450px;">Apply Now</button>
+            <div >
+                <button>
+                    <a href="./pages/DataAnalytics/dataAnalytics.html" style="color: black;">Data</a>
+                </button>
+                <button>
+                    <a href="./pages/UI/uiux.html" style="color: black;">Design</a>
+                   
+                </button>
+                <button>
+                    <a href="./pages/Software Engineering Bootcamp/bootcamp.html" style="color: black;">Coding</a>
+                    
+                </button>
+                <button>
+                   <a href="./pages/Cybersecurity/bootcamp.html" style="color: black;">Cybersec</a>
+                </button>
+                <button>
+                    <a href="./pages/TechSales/techsales.html" style="color: black;">TechSales</a>
+                    
+                </button>
+            </div>
+            <br>
+            <!-- <div id="aply-btn"> -->
+            <a href="#photo" id="aply-btn">
+
+                <button>Apply Now</button>
             </a>
+            <!-- </div> -->
 
         </div>
         <div>
@@ -151,16 +436,21 @@
     <section id="joinBootcamp">
         <p>Join thousands of Bootcamp graduates who work at companies like:</p>
         <div>
-            <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,h_40,q_auto,f_auto,dpr_auto,fl_lossy/v1675916604/website-redesign-dev/American-Express-Logo_2.webp" alt="">
+            <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,h_40,q_auto,f_auto,dpr_auto,fl_lossy/v1675916604/website-redesign-dev/American-Express-Logo_2.webp"
+                alt="">
 
-            <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,h_40,q_auto,f_auto,dpr_auto,fl_lossy/v1675916604/website-redesign-dev/Oracle-Logo_1.webp" alt="">
-            <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,h_40,q_auto,f_auto,dpr_auto,fl_lossy/v1675916604/website-redesign-dev/American-Express-Logo_1.webp" alt="">
-            <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,h_40,q_auto,f_auto,dpr_auto,fl_lossy/v1675916605/website-redesign-dev/Walmart_logo.webp" alt="">
-            <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,h_40,q_auto,f_auto,dpr_auto,fl_lossy/v1675916604/website-redesign-dev/VISA-logo_1.webp" alt="">
+            <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,h_40,q_auto,f_auto,dpr_auto,fl_lossy/v1675916604/website-redesign-dev/Oracle-Logo_1.webp"
+                alt="">
+            <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,h_40,q_auto,f_auto,dpr_auto,fl_lossy/v1675916604/website-redesign-dev/American-Express-Logo_1.webp"
+                alt="">
+            <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,h_40,q_auto,f_auto,dpr_auto,fl_lossy/v1675916605/website-redesign-dev/Walmart_logo.webp"
+                alt="">
+            <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,h_40,q_auto,f_auto,dpr_auto,fl_lossy/v1675916604/website-redesign-dev/VISA-logo_1.webp"
+                alt="">
         </div>
     </section>
 
-    <div style="margin-left: 200px; margin-top: 150px;">
+    <div id="toogle" style="margin-left: 200px; margin-top: 150px;">
         <h5 class="h5-items">PROGRAMS TO PROPEL YOU FORWARD</h5>
         <h1 class="h1-items">Choose your course and set your <br> career in motion</h1>
         <p class="p-items">Want a new career? With Springboard courses, you’ll learn everything you need to <br>
@@ -169,7 +459,7 @@
             three to nine months.</p>
 
         <div style="display: flex; gap: 150px;" class="m-div">
-            <div class="items-div" >
+            <div class="items-div">
                 <h3 class="Ec">Explore courses</h3>
                 <h2 onclick="toggleCourse('analytics','ana')" id="ana">Analytics</h2>
                 <h2 onclick="toggleCourse('dataScience' ,'datasc')" id="datasc">Data Science</h2>
@@ -180,20 +470,20 @@
                 <hr class="hr-line">
                 <div>
                     <a href="#photo">
-                        <button class="items-btn item-btn-apply" >Apply Now</button>
-                    <br>
+                        <button class="items-btn item-btn-apply">Apply Now</button>
+                        <br>
                     </a>
-                    
+
                 </div>
             </div>
             <div style="width: 53%;">
 
-                <div class="course-details" id="analytics" >
+                <div class="course-details" id="analytics">
                     <img src="./images/an-logo.png" alt="logo" width="100%">
                     <h1 class="h1-items" style="font-size: 35px;">Drive decision-making through data</h1>
                     <p class="p-items">Learn to analyze business problems and transform data into insight</p>
                     <div>
-                        <div style="display: flex; justify-content: space-between;">
+                        <div id="f-btn">
                             <div>
                                 <div style="display: flex; align-items: center;">
                                     <h1 class="h1-items" style="font-size: 20px;">Data Analytics Career Track </h1>
@@ -208,14 +498,14 @@
                                 <a href="./pages/DataAnalytics/dataAnalytics.html">
 
                                     <button class="items-btn"
-                                    style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
-                                    Course</button>
+                                        style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
+                                        Course</button>
                                 </a>
-                              
+
                             </div>
                         </div>
                         <hr>
-                        <div style="display: flex; justify-content: space-between">
+                        <div id="s-btn" style="display: flex; justify-content: space-between">
                             <div>
                                 <h1 class="h1-items" style="font-size: 20px;">Introduction to Data Analytics</h1>
                                 <p class="p-items">Learn analytics fundamentals and figure out if a career in data
@@ -228,8 +518,8 @@
                                 <a href="./pages/DataAnalytics/dataAnalytics.html">
 
                                     <button class="items-btn"
-                                    style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
-                                    Course</button>
+                                        style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
+                                        Course</button>
                                 </a>
                             </div>
 
@@ -242,7 +532,7 @@
 
                 <!-- Data Science -->
 
-                <div  class="course-details" id="dataScience" style="display: none;">
+                <div class="course-details" id="dataScience" style="display: none;">
                     <img src="./images/dsimg.png" alt="logo" width="100%">
                     <h1 class="h1-items" style="font-size: 35px;">Master big data to solve big problems</h1>
                     <p class="p-items">Use data to move business forward</p>
@@ -255,16 +545,17 @@
                                 </div>
                                 <p class="p-items">Get data to work harder and predict business outcomes — identify
                                     <br>
-                                    problems, wrangle data, analyze, model, and document</p>
+                                    problems, wrangle data, analyze, model, and document
+                                </p>
                             </div>
                             <div>
                                 <a href="./pages/Data Science/datascience.html">
 
                                     <button class="items-btn"
-                                    style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
-                                    Course</button>
+                                        style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
+                                        Course</button>
                                 </a>
-                                
+
                             </div>
                         </div>
                         <hr>
@@ -279,8 +570,8 @@
                                 <a href="./pages/ML engineering/ML.html">
 
                                     <button class="items-btn"
-                                    style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
-                                    Course</button>
+                                        style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
+                                        Course</button>
                                 </a>
                             </div>
 
@@ -292,20 +583,21 @@
                                 <p class="p-items">Design and build pipelines that transform and transport data in
                                     <br>
                                     partnership with the Washington University in St. Louis McKelvey School <br> of
-                                    Engineering</p>
+                                    Engineering
+                                </p>
                             </div>
                             <div>
                                 <a href="./pages/Data Science/datascience.html">
 
                                     <button class="items-btn"
-                                    style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
-                                    Course</button>
+                                        style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
+                                        Course</button>
                                 </a>
                             </div>
 
                         </div>
                         <hr>
-                        
+
                     </div>
                 </div>
 
@@ -325,15 +617,16 @@
                                     <div class="jg">JOB GUARANTEE</div>
                                 </div>
                                 <p class="p-items">Deliver form and function — develop a design-thinking mindset
-                                    <br> through hands-on projects and an externship</p>
+                                    <br> through hands-on projects and an externship
+                                </p>
                             </div>
                             <div>
                                 <a href="./pages/UI/uiux.html">
                                     <button class="items-btn"
-                                    style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
-                                    Course</button>
+                                        style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
+                                        Course</button>
                                 </a>
-                                
+
                             </div>
                         </div>
                         <hr>
@@ -349,14 +642,14 @@
                             <div>
                                 <a href="./pages/UI/uiux.html">
                                     <button class="items-btn"
-                                    style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
-                                    Course</button>
+                                        style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
+                                        Course</button>
                                 </a>
                             </div>
 
                         </div>
                         <hr>
-                       
+
 
                     </div>
                 </div>
@@ -385,10 +678,10 @@
                                 <a href="./pages/Cybersecurity/bootcamp.html">
 
                                     <button class="items-btn"
-                                    style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
-                                    Course</button>
+                                        style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
+                                        Course</button>
                                 </a>
-                                
+
                             </div>
                         </div>
 
@@ -417,10 +710,10 @@
                             <div>
                                 <a href="./pages/Software Engineering Bootcamp/bootcamp.html">
                                     <button class="items-btn"
-                                    style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
-                                    Course</button>
+                                        style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
+                                        Course</button>
                                 </a>
-                                
+
                             </div>
                         </div>
                         <hr>
@@ -429,13 +722,14 @@
                                 <h1 class="h1-items" style="font-size: 20px;">Software Engineering Career Track Prep
                                 </h1>
                                 <p class="p-items">Build foundations in stats and coding to prepare for our Software
-                                    <br> Engineering Career Track</p>
+                                    <br> Engineering Career Track
+                                </p>
                             </div>
                             <div>
                                 <a href="./pages/Software Engineering Bootcamp/bootcamp.html">
                                     <button class="items-btn"
-                                    style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
-                                    Course</button>
+                                        style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
+                                        Course</button>
                                 </a>
                             </div>
 
@@ -485,11 +779,354 @@
 
     </div>
 
+    
+ <div style="margin:15px;" id="smallpara">
+    <h5 class="h5-items">PROGRAMS TO PROPEL YOU FORWARD</h5>
+        <h1 class="h1-items">Choose your course and set your <br> career in motion</h1>
+        <p class="p-items">Want a new career? With Springboard courses, you’ll learn everything you need to <br>
+            land
+            the job you want in
+            three to nine months.</p>
+            <p style="text-align: center;">Explore courses</p>
+ </div>
+
+<div class="m-4" id="smallcourse">
+    <div class="accordion" id="myAccordion">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSix">
+                <button type="button" class="accordion-button collapsed courseBtn" data-bs-toggle="collapse" data-bs-target="#collapseSix"><img
+                    src="./images/Analyticslogo.png" width="10%" class="mb-1" alt=""> Analytics</button>									
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                <div class="card-body">
+                    <div class="course-details" id="analytics">
+                        <img src="./images/an-logo.png" alt="logo" width="100%">
+                        <h1 class="h1-items" style="font-size: 35px;">Drive decision-making through data</h1>
+                        <p class="p-items">Learn to analyze business problems and transform data into insight</p>
+                        <div>
+                            <div style="display: flex; justify-content: space-between;">
+                                <div>
+                                    <div style="display: flex; align-items: center;">
+                                        <h1 class="h1-items" style="font-size: 20px;">Data Analytics Career Track </h1>
+                                        <div class="jg">JOB GUARANTEE</div>
+                                    </div>
+                                    <p class="p-items">Build a foundation for structured thinking, master visualization,
+                                        and
+                                        <br> become a data story-teller
+                                    </p>
+                                </div>
+                                <div>
+                                    <a href="./pages/DataAnalytics/dataAnalytics.html">
+    
+                                        <button class="items-btn"
+                                            style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
+                                            Course</button>
+                                    </a>
+    
+                                </div>
+                            </div>
+                            <hr>
+                            <div style="display: flex; justify-content: space-between">
+                                <div>
+                                    <h1 class="h1-items" style="font-size: 20px;">Introduction to Data Analytics</h1>
+                                    <p class="p-items">Learn analytics fundamentals and figure out if a career in data
+                                        is
+                                        right
+                                        <br> for you
+                                    </p>
+                                </div>
+                                <div>
+                                    <a href="./pages/DataAnalytics/dataAnalytics.html">
+    
+                                        <button class="items-btn"
+                                            style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
+                                            Course</button>
+                                    </a>
+                                </div>
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSeven">
+                <button type="button" class="accordion-button collapsed courseBtn" data-bs-toggle="collapse" data-bs-target="#collapseSeven"><img src="./images/dataSciencelogo.png"
+                    width="10%" class="mb-1" alt=""> Data Science</button>
+            </h2>
+            <div id="collapseSeven" class="accordion-collapse collapse " data-bs-parent="#myAccordion">
+                <div class="card-body">
+                    <div class="course-details" id="dataScience" >
+                        <img src="./images/dsimg.png" alt="logo" width="100%">
+                        <h1 class="h1-items" style="font-size: 35px;">Master big data to solve big problems</h1>
+                        <p class="p-items">Use data to move business forward</p>
+                        <div>
+                            <div style="display: flex; justify-content: space-between;">
+                                <div>
+                                    <div style="display: flex; align-items: center;">
+                                        <h1 class="h1-items" style="font-size: 20px;">Data Science Career Track </h1>
+                                        <div class="jg">JOB GUARANTEE</div>
+                                    </div>
+                                    <p class="p-items">Get data to work harder and predict business outcomes — identify
+                                        <br>
+                                        problems, wrangle data, analyze, model, and document
+                                    </p>
+                                </div>
+                                <div>
+                                    <a href="./pages/Data Science/datascience.html">
+    
+                                        <button class="items-btn"
+                                            style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
+                                            Course</button>
+                                    </a>
+    
+                                </div>
+                            </div>
+                            <hr>
+                            <div style="display: flex; justify-content: space-between">
+                                <div>
+                                    <h1 class="h1-items" style="font-size: 20px;">ML Engineering Career Track</h1>
+                                    <p class="p-items">Build algorithms that learn better in partnership with the
+                                        University
+                                        of <br> California San Diego Extended Studies</p>
+                                </div>
+                                <div>
+                                    <a href="./pages/ML engineering/ML.html">
+    
+                                        <button class="items-btn"
+                                            style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
+                                            Course</button>
+                                    </a>
+                                </div>
+    
+                            </div>
+                            <hr>
+                            <div style="display: flex; justify-content: space-between">
+                                <div>
+                                    <h1 class="h1-items" style="font-size: 20px;">Data Engineering Career Track</h1>
+                                    <p class="p-items">Design and build pipelines that transform and transport data in
+                                        <br>
+                                        partnership with the Washington University in St. Louis McKelvey School <br> of
+                                        Engineering
+                                    </p>
+                                </div>
+                                <div>
+                                    <a href="./pages/Data Science/datascience.html">
+    
+                                        <button class="items-btn"
+                                            style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
+                                            Course</button>
+                                    </a>
+                                </div>
+    
+                            </div>
+                            <hr>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingEight">
+                <button type="button" class="accordion-button collapsed courseBtn" data-bs-toggle="collapse" data-bs-target="#collapseEight"><img src="./images/Designlogo.png" width="10%"
+                    class="mb-1" alt=""> Design</button>                     
+            </h2>
+            <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                <div class="card-body">
+                    <div class="course-details" id="design" >
+                        <img src="./images/Designimg.png" alt="logo" width="100%">
+                        <h1 class="h1-items" style="font-size: 35px;">Understand users deeply and create <br>
+                            experiences they love</h1>
+                        <p class="p-items">Design products that are useful and beautiful</p>
+                        <div>
+                            <div style="display: flex; justify-content: space-between;">
+                                <div>
+                                    <div style="display: flex; align-items: center;">
+                                        <h1 class="h1-items" style="font-size: 20px;">UI/UX Design Career Track </h1>
+                                        <div class="jg">JOB GUARANTEE</div>
+                                    </div>
+                                    <p class="p-items">Deliver form and function — develop a design-thinking mindset
+                                        <br> through hands-on projects and an externship
+                                    </p>
+                                </div>
+                                <div>
+                                    <a href="./pages/UI/uiux.html">
+                                        <button class="items-btn"
+                                            style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
+                                            Course</button>
+                                    </a>
+    
+                                </div>
+                            </div>
+                            <hr>
+                            <div style="display: flex; justify-content: space-between">
+                                <div>
+                                    <div style="display: flex; align-items: center;">
+                                        <h1 class="h1-items" style="font-size: 20px;">UX Career Track </h1>
+                                        <div class="jg">JOB GUARANTEE</div>
+                                    </div>
+                                    <p class="p-items">Excel at user-centered design and increase usability through
+                                        hands-on <br> projects and an externship</p>
+                                </div>
+                                <div>
+                                    <a href="./pages/UI/uiux.html">
+                                        <button class="items-btn"
+                                            style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
+                                            Course</button>
+                                    </a>
+                                </div>
+    
+                            </div>
+                            <hr>
+    
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingNine">
+                <button type="button" class="accordion-button collapsed courseBtn" data-bs-toggle="collapse" data-bs-target="#collapseNine"><img src="./images/cybersecuritylogo.png"
+                    width="10%" class="mb-1" alt=""> Cybersecurity</button>									
+            </h2>
+            <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                <div class="card-body">
+                    <div class="course-details" id="cybersecurity" >
+                        <img src="./images/ssimg.png" alt="logo" width="100%">
+                        <h1 class="h1-items" style="font-size: 35px;">Defend people, businesses and <br> governments
+                        </h1>
+                        <p class="p-items">Make an impact on the digital front line</p>
+                        <div>
+                            <div style="display: flex; justify-content: space-between;">
+                                <div>
+                                    <div style="display: flex; align-items: center;">
+                                        <h1 class="h1-items" style="font-size: 20px;">Cybersecurity Career Track </h1>
+                                        <div class="jg">JOB GUARANTEE</div>
+                                    </div>
+                                    <p class="p-items">Assess systems and network security, vulnerabilities, and
+                                        operations <br> — graduate with CompTIA Security+ Certification</p>
+                                </div>
+                                <div>
+                                    <a href="./pages/Cybersecurity/bootcamp.html">
+    
+                                        <button class="items-btn"
+                                            style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
+                                            Course</button>
+                                    </a>
+    
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTen">
+                <button type="button" class="accordion-button collapsed courseBtn" data-bs-toggle="collapse" data-bs-target="#collapseTen"><img src="./images/codinglogo.png" width="10%"
+                    class="mb-1" alt=""> Coding</a></button>
+            </h2>
+            <div id="collapseTen" class="accordion-collapse collapse " data-bs-parent="#myAccordion">
+                <div class="card-body">
+                    <div class="course-details" id="coding" >
+                        <img src="./images/codingimg.png" alt="logo" width="100%">
+                        <h1 class="h1-items" style="font-size: 35px;">Write code that will shape the future</h1>
+                        <p class="p-items">Learn front-end and back-end development</p>
+                        <div>
+                            <div style="display: flex; justify-content: space-between;">
+                                <div>
+                                    <div style="display: flex; align-items: center;">
+                                        <h1 class="h1-items" style="font-size: 20px;">Software Engineering Career Track
+                                        </h1>
+                                        <div class="jg">JOB GUARANTEE</div>
+                                    </div>
+                                    <p class="p-items">Master software development theory, tools, and skills — build
+                                        powerful <br> web apps using React, Node, and Express</p>
+                                </div>
+                                <div>
+                                    <a href="./pages/Software Engineering Bootcamp/bootcamp.html">
+                                        <button class="items-btn"
+                                            style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
+                                            Course</button>
+                                    </a>
+    
+                                </div>
+                            </div>
+                            <hr>
+                            <div style="display: flex; justify-content: space-between">
+                                <div>
+                                    <h1 class="h1-items" style="font-size: 20px;">Software Engineering Career Track Prep
+                                    </h1>
+                                    <p class="p-items">Build foundations in stats and coding to prepare for our Software
+                                        <br> Engineering Career Track
+                                    </p>
+                                </div>
+                                <div>
+                                    <a href="./pages/Software Engineering Bootcamp/bootcamp.html">
+                                        <button class="items-btn"
+                                            style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
+                                            Course</button>
+                                    </a>
+                                </div>
+    
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwelve">
+                <button type="button" class="accordion-button collapsed courseBtn" data-bs-toggle="collapse" data-bs-target="#collapseTwelve"><img src="./images/techsaleslogo.png"
+                    width="10%" class="mb-1" alt=""> Tech Sales</button>                     
+            </h2>
+            <div id="collapseTwelve" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                <div class="card-body">
+                    <div class="course-details" id="techSales">
+                        <img src="./images/TechSalesimg.png" alt="logo" width="100%">
+                        <h1 class="h1-items" style="font-size: 35px;">Help businesses solve problems with tech</h1>
+                        <p class="p-items">Put innovative solutions in the hands of companies who need them</p>
+                        <div>
+                            <div style="display: flex; justify-content: space-between;">
+                                <div>
+                                    <div style="display: flex; align-items: center;">
+                                        <h1 class="h1-items" style="font-size: 20px;">Tech Sales Career Track </h1>
+                                        <div class="jg">JOB GUARANTEE</div>
+                                    </div>
+                                    <p class="p-items">Learn directly from sales experts by attending live online
+                                        classes that <br> will help you build job-ready sales skills</p>
+                                </div>
+                                <div>
+                                    <button class="items-btn"
+                                        style="background-color: white; padding: 10px 20px; font-weight: 600; font-size: 14px; margin-top: 40px; height: auto;">View
+                                        Course</button>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
     <section id="learnAi">
         <div>
             <h1>NEW: Learn AI from <br>humans in the <br>know</h1>
-            <p>You need AI. But AI also needs you. And you both need human-guided insights to maximize the power of your collaboration. Enroll in any of our career tracks and gain exclusive access to our AI interactive learning series. You’ll learn from experts who are using AI to increase productivity, win vs. the competition, and lead their teams—so you can too.</p>
+            <p>You need AI. But AI also needs you. And you both need human-guided insights to maximize the power of your
+                collaboration. Enroll in any of our career tracks and gain exclusive access to our AI interactive
+                learning series. You’ll learn from experts who are using AI to increase productivity, win vs. the
+                competition, and lead their teams—so you can too.</p>
         </div>
         <div>
             <img src="./images/learnAI.png" alt="">
@@ -498,27 +1135,33 @@
 
     <section id="joinourbootcamp">
         <h1>Join an industry-leading program</h1>
-        <p>We’ve helped thousands of students learn skills and land jobs. It’s why we’ve been consistently recognized as an industry leader.</p>
+        <p>We’ve helped thousands of students learn skills and land jobs. It’s why we’ve been consistently recognized as
+            an industry leader.</p>
         <div>
-        <div>
-            <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_webp,dpr_auto,fl_lossy/v1678810262/website-redesign/Badges/Course-Report-Springboard-Best-Online-Bootcamp-2022_300x200.webp" alt="">
-            <h4>Best Bootcamp</h4>
-            <p>2022</p>
-        </div>
             <div>
-                <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_webp,dpr_auto,fl_lossy/v1677578412/website-redesign/bootcamp/career-karma.webp" alt="">
+                <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_webp,dpr_auto,fl_lossy/v1678810262/website-redesign/Badges/Course-Report-Springboard-Best-Online-Bootcamp-2022_300x200.webp"
+                    alt="">
                 <h4>Best Bootcamp</h4>
-                <p>2022</p></div>
-                <div>
-                    <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_webp,dpr_auto,fl_lossy/v1677578438/website-redesign/bootcamp/switchup.webp" alt="">
-                    <h4>Best Bootcamp</h4>
-                    <p>2022</p></div>
-                </div>
+                <p>2022</p>
             </div>
+            <div>
+                <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_webp,dpr_auto,fl_lossy/v1677578412/website-redesign/bootcamp/career-karma.webp"
+                    alt="">
+                <h4>Best Bootcamp</h4>
+                <p>2022</p>
+            </div>
+            <div>
+                <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_webp,dpr_auto,fl_lossy/v1677578438/website-redesign/bootcamp/switchup.webp"
+                    alt="">
+                <h4>Best Bootcamp</h4>
+                <p>2022</p>
+            </div>
+        </div>
+        </div>
         </div>
     </section>
     <section id="greenscreen">
-        <p>THE SPRINGBOARD DIFFERENCE</p>
+        <p>OUR BOOTCAMP DIFFERENCE</p>
         <h1>Take the guesswork out of getting ahead</h1>
         <p>Build skills. Learn by doing. Get the support you need. Land the job you want.</p>
         <div class="insidegreen">
@@ -526,21 +1169,25 @@
                 <h1>Make your move in 3 to 9 months</h1>
                 <p>An online, flexible program to fit your life
 
-                    Springboard programs help you grow and evolve at your own pace. No need to quit your job or put your life on hold.</p>
+                    Springboard programs help you grow and evolve at your own pace. No need to quit your job or put your
+                    life on hold.</p>
             </div>
             <div>
-                <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1677266151/website-redesign/lifestyle-photography/flexible-schedule-learn-online-night.webp" alt="">
+                <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1677266151/website-redesign/lifestyle-photography/flexible-schedule-learn-online-night.webp"
+                    alt="">
             </div>
         </div>
         <div class="insidegreen">
             <div>
-                <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1677266648/website-redesign/lifestyle-photography/hands-on-learning-projects-curriculum-springboard.webp" alt="">
+                <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1677266648/website-redesign/lifestyle-photography/hands-on-learning-projects-curriculum-springboard.webp"
+                    alt="">
             </div>
             <div>
                 <h1>Learn deeper with hands-on projects</h1>
                 <p>Practice the skills you’ll use in the real world
 
-                    Unlike other online courses, here you'll build a portfolio that will give you an edge with employers.</p>
+                    Unlike other online courses, here you'll build a portfolio that will give you an edge with
+                    employers.</p>
             </div>
         </div>
         <div class="insidegreen">
@@ -548,15 +1195,18 @@
                 <h1>Work with a team of real people invested in your success</h1>
                 <p>Learn from the best to be your best
 
-                    You'll work 1-on-1 with a mentor, career coach, and student advisor. They'll help you define your path, knock down obstacles, and meet your goals.</p>
+                    You'll work 1-on-1 with a mentor, career coach, and student advisor. They'll help you define your
+                    path, knock down obstacles, and meet your goals.</p>
             </div>
             <div>
-                <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1677266574/website-redesign/lifestyle-photography/real-humans-support-mentorship-springboard.webp" alt="">
+                <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1677266574/website-redesign/lifestyle-photography/real-humans-support-mentorship-springboard.webp"
+                    alt="">
             </div>
         </div>
         <div class="insidegreen">
             <div>
-                <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1677792178/website-redesign/Badges/Springboard-Job-Guarantee-Badge-Rev.webp" alt="">
+                <img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1677792178/website-redesign/Badges/Springboard-Job-Guarantee-Badge-Rev.webp"
+                    alt="">
             </div>
             <div>
                 <h1>Land a job or your money back</h1>
@@ -571,76 +1221,96 @@
         <h1>Your questions, answered</h1>
         <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    Are your bootcamps 100% online?
-                </button>
-              </h2>
-              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Yes. All of Springboard’s courses are 100% online. That means you can learn in your space, at your pace anytime, day or night. 
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Are your bootcamps 100% online?
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Yes. All of Springboard’s courses are 100% online. That means you can
+                        learn in your space, at your pace anytime, day or night.
 
 
 
-                    And just because you are learning online, doesn’t mean you are learning alone. With Springboard, you get a team committed to your success — one-on-one expert guidance from a mentor, a career coach to support you in landing the job you want, and a student advisor to help you navigate the ins and outs of the course. Plus, you’ll build connections with other ambitious students, just like you, who will be growing alongside and helping support you every step of the way. </div>
-              </div>
+                        And just because you are learning online, doesn’t mean you are learning alone. With Springboard,
+                        you get a team committed to your success — one-on-one expert guidance from a mentor, a career
+                        coach to support you in landing the job you want, and a student advisor to help you navigate the
+                        ins and outs of the course. Plus, you’ll build connections with other ambitious students, just
+                        like you, who will be growing alongside and helping support you every step of the way. </div>
+                </div>
             </div>
-            
+
             <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    How long does the course take to complete?
-                </button>
-              </h2>
-              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Springboard courses typically take 6 - 9 months part-time, devoting 15-25 hours/week. However you have the freedom to complete your course in less time, if you're able to devote more time per week.</div>
-              </div>
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        How long does the course take to complete?
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Springboard courses typically take 6 - 9 months part-time, devoting
+                        15-25 hours/week. However you have the freedom to complete your course in less time, if you're
+                        able to devote more time per week.</div>
+                </div>
             </div>
             <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    What’s involved in the “technical skills survey”?
-                </button>
-              </h2>
-              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">The technical skills survey is a simple assessment to gauge your current skill level in your chosen field. It helps us ensure you'll have a successful experience.
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        What’s involved in the “technical skills survey”?
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">The technical skills survey is a simple assessment to gauge your current
+                        skill level in your chosen field. It helps us ensure you'll have a successful experience.
 
-                    What can you expect?
-                    
-                    Technical skills surveys can include multiple choice questions, free-form questions or practice exercises, depending on the course.
-                    
-                    The skills survey is not a timed test but, for reference, most students take less than 45 minutes.</div>
-              </div>
+                        What can you expect?
+
+                        Technical skills surveys can include multiple choice questions, free-form questions or practice
+                        exercises, depending on the course.
+
+                        The skills survey is not a timed test but, for reference, most students take less than 45
+                        minutes.</div>
+                </div>
             </div>
-           
-          </div>
+
+        </div>
     </section>
-    
+
 
     <footer class="card">
         <div class="content">
             <!-- Add your content here (e.g., title, description, buttons, etc.) -->
 
             <div class="footertop">
-                <img src="./pages/logopuzzle3.png"
-                    alt="logo">
+                <img src="./pages/logopuzzle3.png" alt="logo">
                 <div>
-                    <a href="#"><img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1677703102/website-redesign/social-media-icons/YouTube-Icon-White-Circle-Springboard.webp"
-                        alt=""></a>
-
-
-                    <a href="#"><img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1677703102/website-redesign/social-media-icons/Instagram-Icon-White-Circle-Springboard.webp"
-                        alt=""></a>
-
-                    <a href="#"><img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1677703102/website-redesign/social-media-icons/Facebook-Icon-White-Circle-Springboard.webp"
-                        alt=""></a>
-                    
-                        <a href="#"><img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1677703102/website-redesign/social-media-icons/LinkedIn-Icon-White-Circle-Springboard.webp"
+                    <a href="#"><img
+                            src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1677703102/website-redesign/social-media-icons/YouTube-Icon-White-Circle-Springboard.webp"
                             alt=""></a>
-                    
-                    <a href="#"><img src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1677703103/website-redesign/social-media-icons/Twitter-Icon-White-Circle-Springboard.webp"
-                        alt=""></a>        
 
-                    
+
+                    <a href="#"><img
+                            src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1677703102/website-redesign/social-media-icons/Instagram-Icon-White-Circle-Springboard.webp"
+                            alt=""></a>
+
+                    <a href="#"><img
+                            src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1677703102/website-redesign/social-media-icons/Facebook-Icon-White-Circle-Springboard.webp"
+                            alt=""></a>
+
+                    <a href="#"><img
+                            src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1677703102/website-redesign/social-media-icons/LinkedIn-Icon-White-Circle-Springboard.webp"
+                            alt=""></a>
+
+                    <a href="#"><img
+                            src="https://res.cloudinary.com/springboard-images/image/upload/c_limit,q_auto,f_auto,dpr_auto,fl_lossy/v1677703103/website-redesign/social-media-icons/Twitter-Icon-White-Circle-Springboard.webp"
+                            alt=""></a>
+
+
                 </div>
             </div>
             <div class="footerbottom">
@@ -649,10 +1319,10 @@
                     <p href="#" class="footercolor">DESIGN</p>
                     <a href="./pages/UI/uiux.html">UI/UX Design Bootcamp</a>
                     <a href="./pages/UI/uiux.html">UX Design Bootcamp</a>
-                    
+
                     <p href="#" class="footercolor">ANALYTICS</p>
                     <a href="./pages/DataAnalytics/dataAnalytics.html">Data Analytics <br>Bootcamp</a>
-                    
+
                     <p href="#" class="footercolor">DATA SCIENCE</p>
                     <a href="./pages/Data Science/datascience.html">Data Science Bootcamp</a>
                     <a href="./pages/ML engineering/ML.html">ML Engineering Bootcamp</a>
@@ -672,13 +1342,13 @@
                     <a href="./pages/howItsWork/howItsWork.html">How it works</a>
                     <a href="./pages/Mentors/mentors.html">Mentorship</a>
                     <a href="./pages/JobGuarantee/job_gruarantee.html">Job guarantee</a>
-                    
+
                 </div>
                 <div>
                     <p class="footercolor">FOR PARTNERS</p>
                     <a href="./pages/Universities/university.html">Unversities</a>
                     <a href="./pages/Business/business.html">Businesses</a>
-                    
+
                     <p class="footercolor">RESOURCES</p>
                     <a href="./pages/Blog/blog.html">Blog</a>
                     <a href="./pages/Payments/payment.html">Payments</a>
@@ -695,7 +1365,7 @@
             <hr>
         </div>
         <div class="photo" id="photo">
-            <div >
+            <div>
                 <h1 class="formabove">Ready to accelerate your career? Apply now
                 </h1>
                 <p>ENTER YOUR EMAIL <span id="star">*</span></p>
@@ -733,6 +1403,3 @@
 </html>
 <script src="./navbar/ptp.js"></script>
 <script src="./scripts/index.js"></script>
-
-
-
